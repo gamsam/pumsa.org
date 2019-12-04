@@ -34,7 +34,7 @@
             $headers = "From: ".$_POST['email'];
 
             if(mail($emailTo, $subject, $content, $headers)) {
-                $sendmessage = '<div id="errormessage"> Your message was sent. We\'ll get back to you shortly.  </div>';
+                $sendmessage = '<div id="sendmessage"> Your message was sent. We\'ll get back to you shortly.  </div>';
             }
 
             else{
