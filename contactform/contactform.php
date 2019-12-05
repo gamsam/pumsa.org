@@ -4,23 +4,23 @@
 
     if($_POST) {
         if(!$_POST["name"]) {
-            $error .= "An name is required. <br>";
+            $error = "A name is required. <br>";
         }
 
         if(!$_POST["email"]) {
-            $error .= "A valid email address is required. <br>";
+            $error = "A valid email address is required. <br>";
         }
 
         if(!$_POST["subject"]) {
-            $error .= "Please enter a subject. <br>";
+            $error = "Please enter a subject. <br>";
         }
 
         if(!$_POST["message"]) {
-            $error .= "Oops, you forgot to type in your message. <br>";
+            $error = "Oops, you forgot to type in your message. <br>";
         }
 
         if($_POST["email"] && !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-            $error .= "The email address is invalid. <br>";
+            $error = "The email address is invalid. <br>";
         }
 
         if($error != "") {

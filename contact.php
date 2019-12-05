@@ -56,7 +56,7 @@ include_once('header.php');
             <div class="col-md-7">
               <form class="form-a contactForm" action="contactform/contactform.php" method="POST" role="form">
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"><? echo $error; ?></div>
+                <!-- <div id="errormessage"> Sorry. Your message couldn't be sent. </div> -->
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <div class="form-group">

@@ -1,4 +1,4 @@
-<?php $page = basename($_SERVER['PHP_SELF']); ?>
+<?php $page = basename($_SERVER['PHP_SELF']);?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -71,15 +71,15 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Home</a>
+            <a class="nav-link <?php if($page == 'index.php'){ echo ' active"';}?>" href="index.php">Home </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="yellowpage.php"> <span style="color: #f4ca16;"> Yellow Page</span></a>
+            <a class="nav-link <?php if($page == 'yellowpage.php'){ echo ' active"';}?>" href="yellowpage.php"> <span style="color: #f4ca16;"> Yellow Page</span></a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle <?php if($page == 'history.php' || $page == 'profile.php' || $page == 'principles.php' || $page == 'executives.php' || $page == 'senate.php'){ echo ' active"';}?>" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Our Association
             </a>
@@ -93,7 +93,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle <?php if($page == 'newsletter.php' || $page == 'minutes.php' || $page == 'reports.php' || $page == 'election.php'){ echo ' active"';}?>" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Publications
             </a>
@@ -106,7 +106,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle <?php if($page == 'live.php' || $page == 'gallery.php' || $page == 'gallery2.php' || $page == 'news.php' || $page == 'blog.php'|| $page == 'calendar.php'){ echo ' active"';}?>" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Media Center
             </a>
@@ -120,7 +120,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle <?php if($page == 'textbooks.php' || $page == 'pq.php'){ echo ' active"';}?>" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Academics
             </a>
@@ -131,7 +131,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="contact.php">Contact</a>
+            <a class="nav-link <?php if($page == 'contact.php'){ echo ' active"';}?>" href="contact.php">Contact</a>
           </li>
         </ul>
       </div>
