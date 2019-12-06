@@ -106,16 +106,16 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle <?php if($page == 'live.php' || $page == 'gallery.php' || $page == 'gallery2.php' || $page == 'news.php' || $page == 'blog.php'|| $page == 'calendar.php'){ echo ' active"';}?>" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle <?php if($page == 'live.php' || $page == 'gallery.php' || $page == 'gallery2.php' || $page == 'news.php' || $page == 'blog.php'|| $page == 'events.php'){ echo ' active"';}?>" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Media Center
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="blog.php">Blog</a>
               <a class="dropdown-item" href="live.php">Live</a>
               <a class="dropdown-item" href="gallery.php">Gallery</a>
               <a class="dropdown-item" href="news.php">News</a>
-              <a class="dropdown-item" href="blog.php">Blog</a>
-              <a class="dropdown-item" href="calendar.php">Events Calendar</a>
+              <a class="dropdown-item" href="events.php">Events</a>
             </div>
           </li>
 

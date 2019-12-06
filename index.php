@@ -99,7 +99,7 @@ include_once('header.php');
 											<p class="intro-title-top">9th - 13th December
 											<br> 2019 </p>
 										<p class="intro-subtitle intro-price">
-											<a href="calendar.php"><span class="price-a">Learn More</span></a>
+											<a href="events.php"><span class="price-a">Learn More</span></a>
 										</p>
 									</div>
 								</div>
@@ -231,7 +231,7 @@ include_once('header.php');
 				<div class="col-md-12">
 					<div class="title-wrap d-flex justify-content-between">
 						<div class="title-box">
-							<h2 class="title-a">Latest News & Events</h2>
+							<h2 class="title-a">Latest News</h2>
 							<p>Swipe right  <span class="ion-ios-arrow-forward"></span></p>
 						</div>
 						<div class="title-link">
@@ -281,41 +281,6 @@ include_once('header.php');
 				<div class="carousel-item-b">
 					<div class="card-box-a card-shadow">
 						<div class="img-box-a">
-							<img src="img/pumsaeyes.jpg" alt="" class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="calendar.php"> PUMSA
-											<br /> End of Year Events</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">9th-13th December</span>
-									</div>
-									<a href="calendar.php" class="link-a">Click to learn more
-										<span class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">PUMSA</h4>
-											<span>EYE
-											</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
 							<img src="img/uniportmedic.jpeg" alt="" class="img-a img-fluid">
 						</div>
 						<div class="card-overlay">
@@ -343,6 +308,67 @@ include_once('header.php');
 										</li>
 									</ul>
 								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--/ News End /-->
+
+
+	<!--/ News Star /-->
+	<section class="section-property section-t8">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title-wrap d-flex justify-content-between">
+						<div class="title-box">
+							<h2 class="title-a">Upcoming Events</h2>
+							<p>Swipe right  <span class="ion-ios-arrow-forward"></span></p>
+						</div>
+						<div class="title-link">
+							<a href="events.php">All
+								<span class="ion-ios-arrow-forward"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="property-carousel" class="owl-carousel owl-theme">
+
+				<div class="carousel-item-b">
+					<div class="card-box-a card-shadow">
+						<div class="img-box-a">
+							<img src="img/pumsaeyes.jpg" alt="" class="img-a img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-a-content">
+								<div class="card-header-a">
+									<h2 class="card-title-a">
+										<a href="events.php"> PUMSA
+											<br /> End of Year Events</a>
+									</h2>
+								</div>
+								<div class="card-body-a">
+									<div class="price-box d-flex">
+										<span class="price-a">9th-13th December</span>
+									</div>
+									<a href="events.php" class="link-a">Click to learn more
+										<span class="ion-ios-arrow-forward"></span>
+									</a>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<h4 class="card-info-title">PUMSA</h4>
+											<span>EYE
+											</span>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -620,7 +646,7 @@ include_once('header.php');
 										<i class="fa fa-angle-right"></i> <a href="gallery.php">Gallery</a>
 									</li>
 									<li class="item-list-a">
-										<i class="fa fa-angle-right"></i> <a href="calendar.php">Events Calendar</a>
+										<i class="fa fa-angle-right"></i> <a href="events.php">Events</a>
 									</li>
 								</ul>
 							</div>

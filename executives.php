@@ -110,7 +110,7 @@ include_once('header.php');
                 </div>
                 <div class="agent-content mb-3">
                   <p class="content-d color-text-a">
-                    Lorem Ipsum
+                    ...  
                   </p>
                   <div class="info-agents color-a">
                     <p>
@@ -270,7 +270,7 @@ include_once('header.php');
                 </div>
                 <div class="agent-content mb-3">
                   <p class="content-d color-text-a">
-                    Lorem ipsum
+                    ...
                   </p>
                   <div class="info-agents color-a">
                     <p>

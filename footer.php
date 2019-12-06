@@ -46,7 +46,7 @@
                     <i class="fa fa-angle-right"></i> <a href="gallery.php">Gallery</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="calendar.php">Events Calendar</a>
+                    <i class="fa fa-angle-right"></i> <a href="events.php">Events</a>
                   </li>
                 </ul>
               </div>
