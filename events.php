@@ -10,32 +10,32 @@ include_once('header.php');
 
 ?>
 
-  <!--/ Intro Single star /-->
-  <section class="intro-single">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-8">
-          <div class="title-single-box">
-            <h1 class="title-single">PUMSA Events Calendar</h1>
-            <span class="color-text-a">A calendar of all our past and upcoming events</span>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-4">
-          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="index.php">Home</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Event Calendar
-              </li>
-            </ol>
-          </nav>
+<!--/ Intro Single star /-->
+<section class="intro-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <div class="title-single-box">
+          <h1 class="title-single">PUMSA Events Calendar</h1>
+          <span class="color-text-a">A calendar of all our past and upcoming events</span>
         </div>
       </div>
+      <div class="col-md-12 col-lg-4">
+        <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.php">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Event Calendar
+            </li>
+          </ol>
+        </nav>
+      </div>
     </div>
-  </section>
-  <!--/ Intro Single End /-->
+  </div>
+</section>
+<!--/ Intro Single End /-->
 
 <div class="container">
   <div class="row">
@@ -87,6 +87,32 @@ include_once('header.php');
   </div>
 </div>
 
+<!--/ Intro Single star /-->
+<section class="intro-single">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <div class="title-single-box">
+          <h1 class="title-single">PUMSA Upcoming Events</h1>
+          <span class="color-text-a">Details about our upcoming events and activities</span>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.php">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Upcoming Events
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Intro Single End /-->
 
 <!--/ Property Grid Star /-->
   <section class="property-grid grid">

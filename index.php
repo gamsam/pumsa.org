@@ -243,6 +243,42 @@ include_once('header.php');
 				</div>
 			</div>
 			<div id="property-carousel" class="owl-carousel owl-theme">
+
+				<div class="carousel-item-b">
+					<div class="card-box-a card-shadow">
+						<div class="img-box-a">
+							<img src="img/aidsday.jpg" alt="VC, DVC Joins Walk as PUMSA Participates in 2019 WORLD AIDS DAY Celebration" class="img-a img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-a-content">
+								<div class="card-header-a">
+									<h2 class="card-title-a">
+										<a href="aidsday.php"> VC, DVC Joins Walk
+											<br>  as PUMSA Participates in 2019 WORLD AIDS DAY Celebration </a>
+									</h2>
+								</div>
+								<div class="card-body-a">
+									<div class="price-box d-flex">
+										<span class="price-a">2nd December</span>
+									</div>
+									<a href="aidsday.php" class="link-a">Click to learn more
+										<span class="ion-ios-arrow-forward"></span>
+									</a>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<h4 class="card-info-title">World</h4>
+											<span>Aids Day
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="carousel-item-b">
 					<div class="card-box-a card-shadow">
 						<div class="img-box-a">
@@ -308,102 +344,6 @@ include_once('header.php');
 										</li>
 									</ul>
 								</div> -->
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<!--/ News End /-->
-
-
-	<!--/ News Star /-->
-	<section class="section-property section-t8">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="title-wrap d-flex justify-content-between">
-						<div class="title-box">
-							<h2 class="title-a">Upcoming Events</h2>
-							<p>Swipe right  <span class="ion-ios-arrow-forward"></span></p>
-						</div>
-						<div class="title-link">
-							<a href="events.php">All
-								<span class="ion-ios-arrow-forward"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="property-carousel" class="owl-carousel owl-theme">
-
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="img/pumsaeyes.jpg" alt="" class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="events.php"> PUMSA
-											<br /> End of Year Events</a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">9th-13th December</span>
-									</div>
-									<a href="events.php" class="link-a">Click to learn more
-										<span class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">PUMSA</h4>
-											<span>EYE
-											</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="carousel-item-b">
-					<div class="card-box-a card-shadow">
-						<div class="img-box-a">
-							<img src="img/property-10.jpg" alt="" class="img-a img-fluid">
-						</div>
-						<div class="card-overlay">
-							<div class="card-overlay-a-content">
-								<div class="card-header-a">
-									<h2 class="card-title-a">
-										<a href="property-single.php">PUMSA
-											<br /> Outreach </a>
-									</h2>
-								</div>
-								<div class="card-body-a">
-									<div class="price-box d-flex">
-										<span class="price-a">January</span>
-									</div>
-									<a href="property-single.php" class="link-a">Click to learn more
-										<span class="ion-ios-arrow-forward"></span>
-									</a>
-								</div>
-								<div class="card-footer-a">
-									<ul class="card-info d-flex justify-content-around">
-										<li>
-											<h4 class="card-info-title">Area</h4>
-											<span>340m
-											</span>
-										</li>
-									</ul>
-								</div>
 							</div>
 						</div>
 					</div>

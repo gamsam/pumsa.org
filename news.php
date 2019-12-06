@@ -43,6 +43,7 @@ include_once('header.php');
   <section class="property-grid grid">
     <div class="container">
       <div class="row">
+        
         <div class="col-md-4">
           <div class="card-box-a card-shadow">
             <div class="img-box-a">
@@ -93,6 +94,39 @@ include_once('header.php');
                     <span class="price-a">November, 2019</span>
                   </div>
                   <a href="uniportmedic.php" class="link-a">Click here to read
+                    <span class="ion-ios-arrow-forward"></span>
+                  </a>
+                </div>
+                <!-- <div class="card-footer-a">
+                  <ul class="card-info d-flex justify-content-around">
+                    <li>
+                      <h4 class="card-info-title">Date</h4>
+                      <span>November 2019</span>
+                    </li>
+                  </ul>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-box-a card-shadow">
+            <div class="img-box-a">
+              <img src="img/aidsday.jpg" alt="VC, DVC Joins Walk as PUMSA Participates in 2019 WORLD AIDS DAY Celebration" class="img-a img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-overlay-a-content">
+                <div class="card-header-a">
+                  <h2 class="card-title-a">
+                    <a href="aidsday.php">VC, DVC Joins Walk as PUMSA Participates in 2019 WORLD AIDS DAY Celebration</a>
+                  </h2>
+                </div>
+                <div class="card-body-a">
+                  <div class="price-box d-flex">
+                    <span class="price-a">2nd December, 2019</span>
+                  </div>
+                  <a href="aidsday.php" class="link-a">Click here to read
                     <span class="ion-ios-arrow-forward"></span>
                   </a>
                 </div>
