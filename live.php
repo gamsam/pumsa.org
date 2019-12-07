@@ -38,9 +38,13 @@ include_once('header.php');
   <!--/ Intro Single End /-->
 
   <div class="col-md-10 offset-md-1">
-    <iframe width="100%" height="600" src="https://www.youtube.com/embed/Gu4u74YErb4?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=1" frameborder="0"></iframe>
-    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Gu4u74YErb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <!-- <iframe width="100%" height="600" src="https://www.youtube.com/embed/Gu4u74YErb4?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=1" frameborder="0"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gu4u74YErb4?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
+  <div class="col-md-10 offset-md-1">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Gu4u74YErb4?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
 
 <?php include_once('footer.php'); ?>

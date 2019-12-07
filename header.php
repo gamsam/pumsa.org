@@ -1,3 +1,5 @@
+<?php include_once('path.php'); ?>
+
 <?php $page = basename($_SERVER['PHP_SELF']);?>
 
 <!DOCTYPE html>
@@ -28,7 +30,10 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <style>
+  <?php include (ROOT_PATH . '/css/style.css'); ?>
+  </style>
+  <!-- <link href="./css/style.css" rel="stylesheet"> -->
 
   <!-- Fancy Box -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
@@ -133,6 +138,19 @@
           <li class="nav-item">
             <a class="nav-link <?php if($page == 'contact.php'){ echo ' active"';}?>" href="contact.php">Contact</a>
           </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle <?php if($page == 'signup.php' || $page == 'login.php'){ echo ' active"';}?>" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              User
+              <i class="fa fa-user" style="color: #008dc9"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<?php echo BASE_URL . '/signup.php' ?>">Sign Up</a>
+              <a class="dropdown-item" href="<?php echo BASE_URL . '/login.php' ?>">Login</a>
+            </div>
+          </li>
+
         </ul>
       </div>
     </div>

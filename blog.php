@@ -6,11 +6,11 @@ function customPageHeader(){?>
 
 <?php }
 
-include_once('header.php');
+include($_SERVER['DOCUMENT_ROOT']. '/header.php');
 
 ?>
 
-  <!--/ Intro Single star /-->
+<!--/ Intro Single star /-->
   <section class="intro-single">
     <div class="container">
       <div class="row">
@@ -28,6 +28,148 @@ include_once('header.php');
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 Blog
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Intro Single End /-->
+
+<!--/ Blog Star /-->
+	<section class="section-news section-t8">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title-wrap d-flex justify-content-between">
+						<div class="title-box">
+							<h2 class="title-a">Trending Blog Posts</h2>
+							<p>Swipe right  <span class="ion-ios-arrow-forward"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="new-carousel" class="owl-carousel owl-theme">
+
+				<div class="carousel-item-c">
+					<div class="card-box-b card-shadow news-box">
+						<div class="img-box-b">
+							<img src="img/happymen.jpg" alt="" class="img-b img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-header-b">
+								<div class="card-category-b">
+									<a href="happymen.php" class="category-b">Life</a>
+								</div>
+								<div class="card-title-b">
+									<h2 class="title-2">
+										<a href="happymen.php">7 Secret of
+											<br> Happy Men </a>
+									</h2>
+								</div>
+								<div class="card-date">
+									<span class="date-b">Icheka Ozuru</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item-c">
+					<div class="card-box-b card-shadow news-box">
+						<div class="img-box-b">
+							<img src="img/innocencepot.jpg" alt="" class="img-b img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-header-b">
+								<div class="card-category-b">
+									<a href="blog.php" class="category-b">Poetry</a>
+								</div>
+								<div class="card-title-b">
+									<h2 class="title-2">
+										<a href="lossofinnocence.php">Loss of
+											<br> Innocence </a>
+									</h2>
+								</div>
+								<div class="card-date">
+									<span class="date-b">©️ The Writing Doctor</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item-c">
+					<div class="card-box-b card-shadow news-box">
+						<div class="img-box-b">
+							<img src="img/wishespot.jpg" alt="" class="img-b img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-header-b">
+								<div class="card-category-b">
+									<a href="wishes.php" class="category-b">Inspirational</a>
+								</div>
+								<div class="card-title-b">
+									<h2 class="title-2">
+										<a href="blog-single.php">Wishes</a>
+									</h2>
+								</div>
+								<div class="card-date">
+									<span class="date-b">Tochi Izuheihe</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item-c">
+					<div class="card-box-b card-shadow news-box">
+						<div class="img-box-b">
+							<img src="img/costume.jpg" alt="" class="img-b img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-header-b">
+								<div class="card-category-b">
+									<a href="costume.php" class="category-b">Life</a>
+								</div>
+								<div class="card-title-b">
+									<h2 class="title-2">
+										<a href="costume.php">Costume
+											<br> Party </a>
+									</h2>
+								</div>
+								<div class="card-date">
+									<span class="date-b">Idakwo Fervent</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--/ Blog End /-->
+
+  <!--/ Intro Single star /-->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">All Blog Posts</h1>
+            <span class="color-text-a">...</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.php"></a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                
               </li>
             </ol>
           </nav>
@@ -190,5 +332,8 @@ include_once('header.php');
   </section>
   <!--/ News Grid End /-->
   
+<?php 
 
-<?php include_once('footer.php'); ?>
+include($_SERVER['DOCUMENT_ROOT']. '/footer.php');
+
+?>
