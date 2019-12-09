@@ -59,6 +59,7 @@
 </head>
 
 <body>
+
   <!--/ Nav Star /-->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
@@ -158,7 +159,11 @@
                 <?php echo $_SESSION['username']; ?>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="<?php echo BASE_URL . '/dashboard.php' ?>">Dashboard</a>
+                
+                <?php if($_SESSION['admin']): ?>
+                  <a class="dropdown-item" href="<?php echo BASE_URL . '/dashboard.php' ?>">Dashboard</a>
+                <?php endif; ?>
+
                 <a class="dropdown-item" href="<?php echo BASE_URL . '/logout.php' ?>">Logout</a>
               </div>
             </li>
@@ -182,3 +187,6 @@
     </div>
   </nav>
   <!--/ Nav End /-->
+
+
+  <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>

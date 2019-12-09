@@ -30,6 +30,16 @@ p.copyright.color-text-a {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .col-xs-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-xs-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
 }
 
 @media (min-width: 576px) {

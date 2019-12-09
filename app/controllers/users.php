@@ -27,9 +27,14 @@
         $_SESSION['username'] = $user['username'];
         $_SESSION['admin'] = $user['admin'];
         $_SESSION['message'] = 'You are now logged in';
-        $_SESSION['type'] = 'success';
-        // echo ("<script>location.href = '" . BASE_URL . "/index.php?msg=$msg';</script>");
-        header('location: ' . BASE_URL . '/index.php');
+        $_SESSION['type'] = 'alert-success';
+       
+        if($_SESSION['admin']) {
+          header('location: ' . BASE_URL . '/admin/dashboard.php');
+        } else {
+          header('location: ' . BASE_URL . '/index.php');
+        }
+        
         exit();
 
     } 
