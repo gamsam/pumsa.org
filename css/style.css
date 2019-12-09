@@ -2163,6 +2163,17 @@ footer .credits {
   margin-bottom: 15px;
 }
 
+.form-a #sendmessagecontact {
+  color: #008dc9;
+  border: 1px solid #26a356;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+
 .form-a #errormessage {
   color: red;
   display: none;
@@ -2171,6 +2182,17 @@ footer .credits {
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.form-a #errormessageauth {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .form-a #sendmessage.show,

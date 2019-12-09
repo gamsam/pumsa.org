@@ -1,12 +1,14 @@
 <?php
 
+include_once('path.php');
+include(ROOT_PATH . '/app/database/db.php');
 $PageTitle="PUMSA - Profile";
 
 function customPageHeader(){?>
 
 <?php }
 
-include_once('header.php');
+include(ROOT_PATH . '/app/includes/header.php');
 
 ?>
 
@@ -111,4 +113,4 @@ include_once('header.php');
   </section>
   <!--/ News Single End /-->
 
-<?php include_once('footer.php'); ?>
+<?php include(ROOT_PATH . '/app/includes/footer.php'); ?>

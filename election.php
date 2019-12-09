@@ -1,12 +1,14 @@
 <?php
 
+include_once('path.php');
+include(ROOT_PATH . '/app/database/db.php');
 $PageTitle="PUMSA - Election Results";
 
 function customPageHeader(){?>
 
 <?php }
 
-include_once('header.php');
+include(ROOT_PATH . '/app/includes/header.php');
 
 ?>
 
@@ -68,4 +70,4 @@ include_once('header.php');
   </div>
 
 
-<?php include_once('footer.php'); ?>
+<?php include(ROOT_PATH . '/app/includes/footer.php'); ?>

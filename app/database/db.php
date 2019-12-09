@@ -1,7 +1,10 @@
 <?php
 
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+    ob_start();
+
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
 
     require('connect.php');
 
@@ -22,7 +25,7 @@
         }
         else {
             $error = $conn->errno . ' ' . $conn->error;
-            echo $error; // 1054 Unknown column 'foo' in 'field list'
+            echo $error;
         }
 
         $stmt->execute();
@@ -132,5 +135,5 @@
         $stmt = executeQuery($sql, ['id' => $id]);
         return $stmt->affected_rows;
     }
-    
-?>
+
+    ob_end_clean();

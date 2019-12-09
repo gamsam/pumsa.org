@@ -1,12 +1,14 @@
 <?php
 
+include_once('path.php');
+include(ROOT_PATH . '/app/database/db.php');
 $PageTitle="PUMSA - Blog";
 
 function customPageHeader(){?>
 
 <?php }
 
-include($_SERVER['DOCUMENT_ROOT']. '/header.php');
+include(ROOT_PATH . '/app/includes/header.php');
 
 ?>
 
@@ -332,8 +334,5 @@ include($_SERVER['DOCUMENT_ROOT']. '/header.php');
   </section>
   <!--/ News Grid End /-->
   
-<?php 
 
-include($_SERVER['DOCUMENT_ROOT']. '/footer.php');
-
-?>
+<?php include(ROOT_PATH . '/app/includes/footer.php'); ?>

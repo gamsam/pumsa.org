@@ -1,12 +1,14 @@
 <?php
 
+include_once('path.php');
+include(ROOT_PATH . '/app/database/db.php');
 $PageTitle="PUMSA - Happy Men";
 
 function customPageHeader(){?>
 
 <?php }
 
-include_once('header.php');
+include(ROOT_PATH . '/app/includes/header.php');
 
 ?>
 
@@ -183,6 +185,6 @@ include_once('header.php');
               Icheka Ozuru
             </blockquote>
           
-<?php include_once('blogfooter.php'); ?>
+<?php include(ROOT_PATH . '/app/includes/blogfooter.php'); ?>
 
-<?php include_once('footer.php'); ?>
+<?php include(ROOT_PATH . '/app/includes/footer.php'); ?>

@@ -1,12 +1,14 @@
 <?php
 
+include_once('path.php');
+include(ROOT_PATH . '/app/database/db.php');
 $PageTitle="PUMSA - Wishes";
 
 function customPageHeader(){?>
 
 <?php }
 
-include_once('header.php');
+include(ROOT_PATH . '/app/includes/header.php');
 
 ?>
 
@@ -86,6 +88,6 @@ include_once('header.php');
             </blockquote>
  
 
-<?php include_once('footer.php'); ?>
+<?php include(ROOT_PATH . '/app/includes/footer.php'); ?>
 
-<?php include_once('footer.php'); ?>
+<?php include(ROOT_PATH . '/app/includes/footer.php'); ?>
