@@ -1,5 +1,5 @@
 <?php $page = basename($_SERVER['PHP_SELF']); ?>
-<?php include_once('path.php'); ?>
+<!-- <?php include_once('../../path.php'); ?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -173,7 +173,6 @@
                                                       echo ' active"';
                                                     } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user" style="color: #008dc9"></i>
-                <?php echo $_SESSION['username']; ?>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="<?php echo BASE_URL . '/signup.php' ?>">Sign Up</a>

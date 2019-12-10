@@ -78,7 +78,7 @@ include(ROOT_PATH . '/app/includes/header.php');
                   </div>
                 </div>
                 <div class="col-md-12" style="text-align: center;">
-                  <button type="submit" name="register-btn" class="btn btn-a">Sign Up</button>
+                  <button type="submit" name="signup-btn" class="btn btn-a">Sign Up</button>
                 </div>
               </div>
             </form>

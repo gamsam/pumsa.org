@@ -1,0 +1,87 @@
+.navbar-default {
+    background-color:rgb(255, 255, 255);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.admin-wrapper {
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+.admin-wrapper .left-side-bar {
+    flex: 2;
+    height: 100%;
+    background-color: #008dc9;
+}
+
+.admin-wrapper .left-side-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+.admin-wrapper .left-side-bar ul li a {
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid aliceblue;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.admin-wrapper .left-side-bar ul li a:hover {
+    color: aliceblue;
+    border-radius: 0px;
+    font-weight: 300;
+    background-color: black;
+}
+
+.admin-wrapper .admin-content {
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.admin-content .page-title {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #008dc9;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 35px;
+}
+
+form select {
+    width: 100%;
+    height: 35px;
+}
