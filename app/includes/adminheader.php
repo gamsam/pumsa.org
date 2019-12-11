@@ -44,7 +44,7 @@
     <div class="container">
 
       <a href="<?php echo BASE_URL . '/index.php' ?>" class="pull-left navbar-brand"><img src="<?php echo BASE_URL . '/img/logo.png' ?>" alt="PUMSA Logo" style="height: 40px"></a>
-      <a class="navbar-brand text-brand" href="<?php echo BASE_URL . '/index.php' ?>">PUMSA Admin Page</a>
+      <a class="navbar-brand text-brand" href="#">PUMSA Admin Page</a>
 
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>

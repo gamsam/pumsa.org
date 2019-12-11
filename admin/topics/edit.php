@@ -2,7 +2,7 @@
 
 include_once('../../path.php');
 include_once(ROOT_PATH . '/app/controllers/topics.php');
-$PageTitle = "PUMSA - Admin: Add Topic";
+$PageTitle = "PUMSA - Admin: Edit Topic";
 
 function customPageHeader()
 { ?>
@@ -26,16 +26,17 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         </div>
 
         <div class="content">
-            <h2 class="page-title"> Add Topic </h2>
+            <h2 class="page-title"> Edit Topic </h2>
 
-            <form action="create.php" method="post">
+            <form action="edit.php" method="post">
+                <input type="hidden" name="id" value="<?php echo $id ?>">
                 <div>
                     <label>Topic</label>
-                    <input type="text" name="name" class="text-input">
+                    <input type="text" name="name" value="<?php echo $name ?>" class="text-input">
                 </div>
                 <div>
                     <label>Description</label>
-                    <textarea name="description" class="editor" id="editor"> Describe the topic</textarea>
+                    <textarea name="description" class="editor" id="editor"><?php echo $description ?></textarea>
 
                     <script>
                         ClassicEditor
@@ -47,7 +48,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
 
                 </div>
                 <div>
-                    <button type="submit" name="add-topic" class="btn btn-a">Add Topic</button>
+                    <button type="submit" name="update-topic" class="btn btn-a">Update Topic</button>
                 </div>
 
             </form>

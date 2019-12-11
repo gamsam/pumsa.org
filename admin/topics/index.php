@@ -1,6 +1,7 @@
 <?php
 
 include_once('../../path.php');
+include_once(ROOT_PATH . '/app/controllers/topics.php');
 $PageTitle = "PUMSA - Admin: Manage Topics";
 
 function customPageHeader()
@@ -8,7 +9,7 @@ function customPageHeader()
 
 <?php }
 
-include(ROOT_PATH . '/app/controllers/users.php');
+// include(ROOT_PATH . '/app/controllers/users.php');
 include(ROOT_PATH . '/app/includes/adminheader.php');
 
 ?>
@@ -16,13 +17,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
 
 <div class="admin-wrapper">
 
-    <div class="left-side-bar">
-        <ul>
-            <li><a href="<?php echo BASE_URL . '/admin/posts/index.php' ?>">Manage Posts</a></li>
-            <li><a href="<?php echo BASE_URL . '/admin/users/index.php' ?>">Manage Users</a></li>
-            <li><a href="<?php echo BASE_URL . '/admin/topics/index.php' ?>">Manage Topics</a></li>
-        </ul>
-    </div>
+    <?php include(ROOT_PATH . '/app/includes/adminsidebar.php'); ?>
 
     <div class="admin-content">
         <div class="button-group" style="text-align: center;">
@@ -33,6 +28,8 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         <div class="content">
             <h2 class="page-title"> Manage Topics </h2>
 
+            <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>
+
             <table>
                 <thead>
                     <th>SN</th>
@@ -41,18 +38,15 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Poetry</td>
-                        <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
-                        <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Life</td>
-                        <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
-                        <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
-                    </tr>
+                    <?php foreach ($topics as $key => $topic) : ?>
+                        <tr>
+                            <td><?php echo $key + 1; ?></td>
+                            <td><?php echo $topic['name']; ?></td>
+                            <td><a href="edit.php?id=<?php echo $topic['id']; ?>" class="btn btn-sm btn-b-n">Edit</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
+                        </tr>
+                    <?php endforeach; ?>
+
                 </tbody>
             </table>
 

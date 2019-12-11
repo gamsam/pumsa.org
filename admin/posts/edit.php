@@ -1,7 +1,7 @@
 <?php
 
 include_once('../../path.php');
-$PageTitle = "PUMSA - Admin: Add Post";
+$PageTitle = "PUMSA - Admin: Edit Post";
 
 function customPageHeader()
 { ?>
@@ -25,7 +25,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         </div>
 
         <div class="content">
-            <h2 class="page-title"> Add Post </h2>
+            <h2 class="page-title"> Edit Post </h2>
 
             <form action="create.php" method="post">
                 <div>
@@ -59,7 +59,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                 </div>
 
                 <div>
-                    <button type="submit" class="btn btn-a">Add Post</button>
+                    <button type="submit" class="btn btn-a">Update Post</button>
                 </div>
 
             </form>
