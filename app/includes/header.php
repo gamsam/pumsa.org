@@ -31,7 +31,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?php echo BASE_URL . '/css/style.css' ?>" rel="stylesheet">
-  <!-- <link href="./css/style.css" rel="stylesheet"> -->
+  <link href="<?php echo BASE_URL . '/css/blogstyle.css' ?>" rel="stylesheet">
 
   <!-- Fancy Box -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
@@ -41,7 +41,7 @@
 
 
   <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
     (function() {
@@ -53,7 +53,7 @@
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();
-  </script>
+  </script> -->
   <!--End of Tawk.to Script-->
 
 </head>
@@ -159,8 +159,8 @@
                 <?php echo $_SESSION['username']; ?>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                
-                <?php if($_SESSION['admin']): ?>
+
+                <?php if ($_SESSION['admin']) : ?>
                   <a class="dropdown-item" href="<?php echo BASE_URL . '/dashboard.php' ?>">Dashboard</a>
                 <?php endif; ?>
 

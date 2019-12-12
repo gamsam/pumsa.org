@@ -22,7 +22,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
     <div class="admin-content">
         <div class="button-group" style="text-align: center;">
             <a href="create.php" class="btn btn-a btn-sm"> Add Topic </a>
-            <a href="index.php" class="btn btn-a btn-sm"> Manage Topic </a>
+            <a href="index.php" class="btn btn-a btn-sm"> Manage Topics </a>
         </div>
 
         <div class="content">
@@ -43,7 +43,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                             <td><?php echo $key + 1; ?></td>
                             <td><?php echo $topic['name']; ?></td>
                             <td><a href="edit.php?id=<?php echo $topic['id']; ?>" class="btn btn-sm btn-b-n">Edit</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
+                            <td><a href="index.php?del_id=<?php echo $topic['id']; ?>" class="btn btn-sm btn-danger">Delete</a></td>
                         </tr>
                     <?php endforeach; ?>
 

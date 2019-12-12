@@ -28,7 +28,10 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         <div class="content">
             <h2 class="page-title"> Edit Topic </h2>
 
-            <form action="edit.php" method="post">
+            <form class="form-a" action="edit.php" method="post">
+
+                <?php include_once(ROOT_PATH . '/app/helpers/formErrors.php'); ?>
+
                 <input type="hidden" name="id" value="<?php echo $id ?>">
                 <div>
                     <label>Topic</label>
@@ -47,7 +50,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                     </script>
 
                 </div>
-                <div>
+                <div style="text-align: center;">
                     <button type="submit" name="update-topic" class="btn btn-a">Update Topic</button>
                 </div>
 

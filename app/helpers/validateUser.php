@@ -21,7 +21,7 @@
         }
 
         $existingUser = selectOne('users', ['email' => $user['email']]);
-        if (isset($existingUser)) {
+        if ($existingUser) {
             array_push($errors, 'Email already registered, please login instead');
         }
 

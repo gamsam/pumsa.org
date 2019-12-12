@@ -14,7 +14,6 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
 
 ?>
 
-
 <div class="admin-wrapper">
 
     <?php include(ROOT_PATH . '/app/includes/adminsidebar.php'); ?>
@@ -28,14 +27,17 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         <div class="content">
             <h2 class="page-title"> Add Topic </h2>
 
-            <form action="create.php" method="post">
+            <form class="form-a" action="create.php" method="post">
+
+                <?php include_once(ROOT_PATH . '/app/helpers/formErrors.php'); ?>
+
                 <div>
                     <label>Topic</label>
-                    <input type="text" name="name" class="text-input">
+                    <input type="text" value="<?php echo $name ?>" name="name" class="text-input">
                 </div>
                 <div>
                     <label>Description</label>
-                    <textarea name="description" class="editor" id="editor"> Describe the topic</textarea>
+                    <textarea name="description" value="<?php echo $description ?>" class="editor" id="editor"> Describe the topic</textarea>
 
                     <script>
                         ClassicEditor
@@ -46,7 +48,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                     </script>
 
                 </div>
-                <div>
+                <div style="text-align: center;">
                     <button type="submit" name="add-topic" class="btn btn-a">Add Topic</button>
                 </div>
 

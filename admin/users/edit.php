@@ -27,7 +27,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         <div class="content">
             <h2 class="page-title"> Edit User </h2>
 
-            <form action="create.php" method="post">
+            <form class="form-a" action="create.php" method="post">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="form-group">

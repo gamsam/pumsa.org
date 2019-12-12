@@ -27,7 +27,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         <div class="content">
             <h2 class="page-title"> Edit Post </h2>
 
-            <form action="create.php" method="post">
+            <form class="form-a" action="create.php" method="post">
                 <div>
                     <label>Title</label>
                     <input type="text" name="title" class="text-input">
@@ -58,7 +58,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                     </select>
                 </div>
 
-                <div>
+                <div style="text-align: center;">
                     <button type="submit" class="btn btn-a">Update Post</button>
                 </div>
 
