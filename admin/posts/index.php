@@ -44,13 +44,13 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                             <td> <?php echo $key + 1; ?> </td>
                             <td> <?php echo $post['title']; ?> </td>
                             <td>gamsam</td>
-                            <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
+                            <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="btn btn-sm btn-b-n">Edit</a></td>
+                            <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="btn btn-sm btn-danger">Delete</a></td>
 
                             <?php if ($post['published']) : ?>
-                                <td><a href="" class="unpublish btn btn-sm btn-outline-secondary">Unpublish</a></td>
+                                <td><a href="edit.php?published=0&p_id=<?php echo $post['id']; ?>" class="unpublish btn btn-sm btn-outline-danger">Unpublish</a></td>
                             <?php else : ?>
-                                <td><a href="" class="publish btn btn-sm btn-outline-secondary">Publish</a></td>
+                                <td><a href="edit.php?published=1&p_id=<?php echo $post['id']; ?>" class="publish btn btn-sm btn-outline-success">Publish</a></td>
                             <?php endif; ?>
 
                         </tr>

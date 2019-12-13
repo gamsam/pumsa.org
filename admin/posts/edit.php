@@ -8,7 +8,7 @@ function customPageHeader()
 
 <?php }
 
-include(ROOT_PATH . '/app/controllers/users.php');
+include(ROOT_PATH . '/app/controllers/posts.php');
 include(ROOT_PATH . '/app/includes/adminheader.php');
 
 ?>
@@ -27,14 +27,18 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         <div class="content">
             <h2 class="page-title"> Edit Post </h2>
 
-            <form class="form-a" action="create.php" method="post">
+            <form class="form-a" action="edit.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="<?php echo $id; ?>" name="id">
+
+                <?php include_once(ROOT_PATH . '/app/helpers/formErrors.php'); ?>
+
                 <div>
                     <label>Title</label>
-                    <input type="text" name="title" class="text-input">
+                    <input type="text" value="<?php echo $title; ?>" name="title" class="text-input">
                 </div>
                 <div>
                     <label>Body</label>
-                    <textarea name="content0" class="editor" id="editor"></textarea>
+                    <textarea name="body" value="<?php echo $body; ?>" class="editor" id="editor"><?php echo $body; ?></textarea>
 
                     <script>
                         ClassicEditor
@@ -49,17 +53,49 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                     <label>Image</label>
                     <input type="file" name="image" class="text-input">
                 </div>
-                <div>
+
+                <div class="form-group">
                     <label>Topic</label>
-                    <select name="topic" class="text-input">
-                        <option value="Poetry">Poetry</option>
-                        <option value="Poetry">Life</option>
-                        <option value="Poetry">Inspirational</option>
+                    <select name="topic_id" class="text-input">
+                        <option value=""> Select </option>
+
+                        <?php foreach ($topics as $key => $topic) : ?>
+
+                            <?php if (!empty($topic_id) && $topic_id == $topic['id']) : ?>
+                                <option selected value="<?php echo $topic['id'] ?>"> <?php echo $topic['name'] ?> </option>
+                            <?php else : ?>
+                                <option value="<?php echo $topic['id'] ?>"> <?php echo $topic['name'] ?> </option>
+                            <?php endif; ?>
+
+                        <?php endforeach; ?>
+
                     </select>
                 </div>
 
+                <div>
+
+                    <?php if (empty($published) && $published == 0) : ?>
+                        <label class="">
+                            <input class="" type="checkbox" name="published">
+                            Check to publish
+                        </label>
+                    <?php else : ?>
+                        <label class="">
+                            <input class="" type="checkbox" name="published" checked>
+                            Check to publish
+                        </label>
+                    <?php endif; ?>
+
+                </div>
+
+                <style>
+                    input[type=checkbox] {
+                        transform: scale(0.6);
+                    }
+                </style>
+
                 <div style="text-align: center;">
-                    <button type="submit" class="btn btn-a">Update Post</button>
+                    <button type="submit" name="update-post" class="btn btn-a">Update Post</button>
                 </div>
 
             </form>

@@ -32,24 +32,38 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                     <th>SN</th>
                     <th>Username</th>
                     <th>Role</th>
-                    <th colspan="2">Action</th>
+                    <th colspan="3">Action</th>
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>@gamsam</td>
-                        <td>Admin</td>
-                        <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
-                        <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Femi</td>
-                        <td>Admin</td>
-                        <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
-                        <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
-                    </tr>
+
+                    <?php foreach ($users as $key => $user) : ?>
+                        <tr>
+                            <td> <?php echo $key + 1; ?> </td>
+                            <td> <?php echo $user['username']; ?> </td>
+                            <td> <?php echo $user['email']; ?> </td>
+                            <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="btn btn-sm btn-b-n">Edit</a></td>
+                            <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="btn btn-sm btn-danger">Delete</a></td>
+
+                            <?php if ($user['admin']) : ?>
+                                <td><a href="edit.php?admin=0&a_id=<?php echo $user['id']; ?>" class="unadmin btn btn-sm btn-outline-danger">Remove as Admin</a></td>
+                            <?php else : ?>
+                                <td><a href="edit.php?admin=1&a_id=<?php echo $user['id']; ?>" class="admin btn btn-sm btn-outline-success">Make an Admin</a></td>
+                            <?php endif; ?>
+
+                        </tr>
+                    <?php endforeach; ?>
+
+                    <!-- <?php foreach ($admins as $key => $user) : ?>
+                        <tr>
+                            <td><?php echo $key + 1; ?></td>
+                            <td><?php echo $user['username']; ?></td>
+                            <td>Admin</td>
+                            <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
+                        </tr>
+                    <?php endforeach; ?> -->
+
                 </tbody>
             </table>
 
