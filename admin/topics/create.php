@@ -37,7 +37,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                 </div>
                 <div>
                     <label>Description</label>
-                    <textarea name="description" value="<?php echo $description ?>" class="editor" id="editor"> Describe the topic</textarea>
+                    <textarea name="description" value="<?php echo $description ?>" class="editor" id="editor"></textarea>
 
                     <script>
                         ClassicEditor

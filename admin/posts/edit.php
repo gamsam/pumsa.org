@@ -34,7 +34,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                 </div>
                 <div>
                     <label>Body</label>
-                    <textarea name="content0" class="editor" id="editor">Enter Blog Post Here</textarea>
+                    <textarea name="content0" class="editor" id="editor"></textarea>
 
                     <script>
                         ClassicEditor

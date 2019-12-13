@@ -183,7 +183,7 @@ include(ROOT_PATH . '/app/includes/header.php');
           <div class="row">
             <div class="col-md-3">
               <div class="agent-avatar-box">
-                <img src="img/valerie.jpg" alt="" class="agent-avatar img-fluid">
+                <img src="img/valerie.jpg" alt="" class="agent-avatar img-fluid" width="100%">
               </div>
             </div>
             <div class="col-md-3 section-md-t3">

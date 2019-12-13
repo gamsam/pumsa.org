@@ -8,7 +8,7 @@ function customPageHeader()
 
 <?php }
 
-include(ROOT_PATH . '/app/controllers/users.php');
+include(ROOT_PATH . '/app/controllers/posts.php');
 include(ROOT_PATH . '/app/includes/adminheader.php');
 
 ?>
@@ -27,6 +27,8 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
         <div class="content">
             <h2 class="page-title"> Manage Posts </h2>
 
+            <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>
+
             <table>
                 <thead>
                     <th>SN</th>
@@ -36,22 +38,24 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>This is the first post</td>
-                        <td>gamsam</td>
-                        <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
-                        <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
-                        <td><a href="" class="btn btn-sm btn-outline-secondary">Publish</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>This is the second post</td>
-                        <td>gamsam</td>
-                        <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
-                        <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
-                        <td><a href="" class="btn btn-sm btn-outline-secondary">Publish</a></td>
-                    </tr>
+
+                    <?php foreach ($posts as $key => $post) : ?>
+                        <tr>
+                            <td> <?php echo $key + 1; ?> </td>
+                            <td> <?php echo $post['title']; ?> </td>
+                            <td>gamsam</td>
+                            <td><a href="" class="btn btn-sm btn-b-n">Edit</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Delete</a></td>
+
+                            <?php if ($post['published']) : ?>
+                                <td><a href="" class="unpublish btn btn-sm btn-outline-secondary">Unpublish</a></td>
+                            <?php else : ?>
+                                <td><a href="" class="publish btn btn-sm btn-outline-secondary">Publish</a></td>
+                            <?php endif; ?>
+
+                        </tr>
+                    <?php endforeach; ?>
+
                 </tbody>
             </table>
 
