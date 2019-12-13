@@ -11,6 +11,7 @@ $posts = selectAll($table);
 $errors = array();
 $id = '';
 $title = '';
+$author = '';
 $body = '';
 $topic_id = '';
 $published = '';
@@ -40,6 +41,7 @@ if (isset($_GET['id'])) {
     $post = selectOne($table, ['id' => $_GET['id']]);
     $id = $post['id'];
     $title = $post['title'];
+    $author = $post['author'];
     $body = $post['body'];
     $topic_id = $post['topic_id'];
     $published = $post['published'];
@@ -80,6 +82,7 @@ if (isset($_POST['add-post'])) {
         exit();
     } else {
         $title = $_POST['title'];
+        $author = $_POST['author'];
         $body = $_POST['body'];
         $topic_id = $_POST['topic_id'];
         $published = isset($_POST['published']) ? 1 : 0;
@@ -121,6 +124,7 @@ if (isset($_POST['update-post'])) {
         exit();
     } else {
         $title = $_POST['title'];
+        $author = $_POST['author'];
         $body = $_POST['body'];
         $topic_id = $_POST['topic_id'];
         $published = isset($_POST['published']) ? 1 : 0;

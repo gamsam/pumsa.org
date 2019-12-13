@@ -35,6 +35,12 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                     <label>Title</label>
                     <input type="text" value="<?php echo $title; ?>" name="title" class="text-input">
                 </div>
+
+                <div>
+                    <label>Author</label>
+                    <input type="text" value="<?php echo $author; ?>" name="author" class="text-input">
+                </div>
+
                 <div>
                     <label>Body</label>
                     <textarea name="body" value="<?php echo $body; ?>" class="editor" id="editor"><?php echo $body; ?></textarea>

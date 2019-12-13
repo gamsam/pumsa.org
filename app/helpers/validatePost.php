@@ -8,6 +8,10 @@ function validatePost($post)
         array_push($errors, 'Title is required');
     }
 
+    if (empty($post['author'])) {
+        array_push($errors, 'Author is required');
+    }
+
     if (empty($post['body'])) {
         array_push($errors, 'Body is required');
     }

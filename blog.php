@@ -2,6 +2,10 @@
 
 include_once('path.php');
 include_once(ROOT_PATH . '/app/controllers/topics.php');
+
+$posts = selectAll('posts', ['published' => 1]);
+dd($posts);
+
 $PageTitle = "PUMSA - Blog";
 
 function customPageHeader()
