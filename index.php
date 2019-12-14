@@ -2,6 +2,11 @@
 
 include_once('path.php');
 include(ROOT_PATH . '/app/database/db.php');
+
+$posts = array();
+
+$posts = selectAll('posts', ['published' => 1]);
+
 $PageTitle = "PUMSA - Selfless Service to Mankind";
 
 function customPageHeader()
@@ -377,100 +382,30 @@ include(ROOT_PATH . '/app/includes/header.php');
 		</div>
 		<div id="new-carousel" class="owl-carousel owl-theme">
 
-			<div class="carousel-item-c">
-				<div class="card-box-b card-shadow news-box">
-					<div class="img-box-b">
-						<img src="img/happymen.jpg" alt="" class="img-b img-fluid">
-					</div>
-					<div class="card-overlay">
-						<div class="card-header-b">
-							<div class="card-category-b">
-								<a href="happymen.php" class="category-b">Life</a>
-							</div>
-							<div class="card-title-b">
-								<h2 class="title-2">
-									<a href="happymen.php">7 Secret of
-										<br> Happy Men </a>
-								</h2>
-							</div>
-							<div class="card-date">
-								<span class="date-b">Icheka Ozuru</span>
+			<?php foreach ($posts as $post) : ?>
+				<div class="carousel-item-c">
+					<div class="card-box-b card-shadow news-box" style="height: 350px;">
+						<div class="img-box-b" style="height: 350px;">
+							<img src="<?php echo BASE_URL . '/img/blog_img/' . $post['image']; ?>" alt="" class="img-b img-fluid" style="height: 350px; object-fit: cover;">
+						</div>
+						<div class="card-overlay">
+							<div class="card-header-b">
+								<div class="card-title-b">
+									<h2 class="title-2">
+										<a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
+									</h2>
+								</div>
+								<div class="card-date">
+									<span class="date-b"><?php echo $post['author']; ?></span>
+								</div>
+								<div class="card-category-b" style="margin-top: 10px">
+									<a href="single.php?id=<?php echo $post['id']; ?>" class="category-b"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?> </a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="carousel-item-c">
-				<div class="card-box-b card-shadow news-box">
-					<div class="img-box-b">
-						<img src="img/innocencepot.jpg" alt="" class="img-b img-fluid">
-					</div>
-					<div class="card-overlay">
-						<div class="card-header-b">
-							<div class="card-category-b">
-								<a href="blog.php" class="category-b">Poetry</a>
-							</div>
-							<div class="card-title-b">
-								<h2 class="title-2">
-									<a href="lossofinnocence.php">Loss of
-										<br> Innocence </a>
-								</h2>
-							</div>
-							<div class="card-date">
-								<span class="date-b">©️ The Writing Doctor</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item-c">
-				<div class="card-box-b card-shadow news-box">
-					<div class="img-box-b">
-						<img src="img/wishespot.jpg" alt="" class="img-b img-fluid">
-					</div>
-					<div class="card-overlay">
-						<div class="card-header-b">
-							<div class="card-category-b">
-								<a href="wishes.php" class="category-b">Inspirational</a>
-							</div>
-							<div class="card-title-b">
-								<h2 class="title-2">
-									<a href="blog-single.php">Wishes</a>
-								</h2>
-							</div>
-							<div class="card-date">
-								<span class="date-b">Tochi Izuheihe</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item-c">
-				<div class="card-box-b card-shadow news-box">
-					<div class="img-box-b">
-						<img src="img/costume.jpg" alt="" class="img-b img-fluid">
-					</div>
-					<div class="card-overlay">
-						<div class="card-header-b">
-							<div class="card-category-b">
-								<a href="costume.php" class="category-b">Life</a>
-							</div>
-							<div class="card-title-b">
-								<h2 class="title-2">
-									<a href="costume.php">Costume
-										<br> Party </a>
-								</h2>
-							</div>
-							<div class="card-date">
-								<span class="date-b">Idakwo Fervent</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php endforeach; ?>
 
 		</div>
 	</div>
@@ -703,8 +638,6 @@ include(ROOT_PATH . '/app/includes/header.php');
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/scrollreveal/scrollreveal.min.js"></script>
-<!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
 
 <!--  Main Javascript File -->
 <script src="js/main.js"></script>

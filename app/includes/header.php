@@ -84,7 +84,7 @@
           <li class="nav-item">
             <a class="nav-link <?php if ($page == 'yellowpage.php') {
                                   echo ' active"';
-                                } ?>" href="yellowpage.php"> <span style="color: #f4ca16;"> Yellow Page</span></a>
+                                } ?>" href="yellowpage.php"> <span class="blink" style="color: #f4ca16;"> Yellow Page</span></a>
           </li>
 
           <li class="nav-item dropdown">
@@ -161,7 +161,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                 <?php if ($_SESSION['admin']) : ?>
-                  <a class="dropdown-item" href="<?php echo BASE_URL . '/dashboard.php' ?>">Dashboard</a>
+                  <a class="dropdown-item" href="<?php echo BASE_URL . '/admin/dashboard.php' ?>">Dashboard</a>
                 <?php endif; ?>
 
                 <a class="dropdown-item" href="<?php echo BASE_URL . '/logout.php' ?>">Logout</a>

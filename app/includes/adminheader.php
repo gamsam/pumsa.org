@@ -6,7 +6,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title><?= isset($PageTitle) ? $PageTitle : "Default Title" ?></title>
+  <title><?= isset($PageTitle) ? $PageTitle : "PUMSA" ?></title>
   <?php if (function_exists('customPageHeader')) {
     customPageHeader();
   } ?>

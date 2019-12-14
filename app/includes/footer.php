@@ -156,8 +156,6 @@
 <script src="<?php echo BASE_URL . '/lib/easing/easing.min.js' ?>"></script>
 <script src="<?php echo BASE_URL . '/lib/owlcarousel/owl.carousel.min.js' ?>"></script>
 <script src="<?php echo BASE_URL . '/lib/scrollreveal/scrollreveal.min.js' ?>"></script>
-<!-- Contact Form JavaScript File -->
-<script src="<?php echo BASE_URL . '/contactform/contactform.js' ?>"></script>
 
 <!-- Template Main Javascript File -->
 <script src="<?php echo BASE_URL . '/js/main.js' ?>"></script>

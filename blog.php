@@ -3,8 +3,19 @@
 include_once('path.php');
 include_once(ROOT_PATH . '/app/controllers/topics.php');
 
-$posts = selectAll('posts', ['published' => 1]);
-dd($posts);
+$posts = array();
+$postsTitle = 'All Blog Posts';
+
+if (isset($_GET['t_id'])) {
+  $posts = getPostsByTopicId($_GET['t_id']);
+  $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
+} else if (isset($_POST['search-term'])) {
+  $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
+  $posts = searchPost($_POST['search-term']);
+} else {
+  $posts = selectAll('posts', ['published' => 1]);
+}
+
 
 $PageTitle = "PUMSA - Blog";
 
@@ -60,100 +71,30 @@ include(ROOT_PATH . '/app/includes/header.php');
     </div>
     <div id="new-carousel" class="owl-carousel owl-theme">
 
-      <div class="carousel-item-c">
-        <div class="card-box-b card-shadow news-box">
-          <div class="img-box-b">
-            <img src="img/happymen.jpg" alt="" class="img-b img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-header-b">
-              <div class="card-category-b">
-                <a href="happymen.php" class="category-b">Life</a>
-              </div>
-              <div class="card-title-b">
-                <h2 class="title-2">
-                  <a href="happymen.php">7 Secret of
-                    <br> Happy Men </a>
-                </h2>
-              </div>
-              <div class="card-date">
-                <span class="date-b">Icheka Ozuru</span>
+      <?php foreach ($posts as $post) : ?>
+        <div class="carousel-item-c">
+          <div class="card-box-b card-shadow news-box" style="height: 350px;">
+            <div class="img-box-b" style="height: 350px;">
+              <img src="<?php echo BASE_URL . '/img/blog_img/' . $post['image']; ?>" alt="" class="img-b img-fluid" style="height: 350px; object-fit: cover;">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b"><?php echo $post['author']; ?></span>
+                </div>
+                <div class="card-category-b" style="margin-top: 10px">
+                  <a href="single.php?id=<?php echo $post['id']; ?>" class="category-b"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?> </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="carousel-item-c">
-        <div class="card-box-b card-shadow news-box">
-          <div class="img-box-b">
-            <img src="img/innocencepot.jpg" alt="" class="img-b img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-header-b">
-              <div class="card-category-b">
-                <a href="blog.php" class="category-b">Poetry</a>
-              </div>
-              <div class="card-title-b">
-                <h2 class="title-2">
-                  <a href="lossofinnocence.php">Loss of
-                    <br> Innocence </a>
-                </h2>
-              </div>
-              <div class="card-date">
-                <span class="date-b">©️ The Writing Doctor</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item-c">
-        <div class="card-box-b card-shadow news-box">
-          <div class="img-box-b">
-            <img src="img/wishespot.jpg" alt="" class="img-b img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-header-b">
-              <div class="card-category-b">
-                <a href="wishes.php" class="category-b">Inspirational</a>
-              </div>
-              <div class="card-title-b">
-                <h2 class="title-2">
-                  <a href="blog-single.php">Wishes</a>
-                </h2>
-              </div>
-              <div class="card-date">
-                <span class="date-b">Tochi Izuheihe</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item-c">
-        <div class="card-box-b card-shadow news-box">
-          <div class="img-box-b">
-            <img src="img/costume.jpg" alt="" class="img-b img-fluid">
-          </div>
-          <div class="card-overlay">
-            <div class="card-header-b">
-              <div class="card-category-b">
-                <a href="costume.php" class="category-b">Life</a>
-              </div>
-              <div class="card-title-b">
-                <h2 class="title-2">
-                  <a href="costume.php">Costume
-                    <br> Party </a>
-                </h2>
-              </div>
-              <div class="card-date">
-                <span class="date-b">Idakwo Fervent</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
 
     </div>
   </div>
@@ -170,7 +111,7 @@ include(ROOT_PATH . '/app/includes/header.php');
           <section class="intro-single">
             <div class="col-md-12 col-lg-12">
               <div class="title-single-box">
-                <h1 class="title-single">All Blog Posts</h1>
+                <h1 class="title-single"><?php echo $postsTitle ?></h1>
               </div>
             </div>
           </section>
@@ -181,121 +122,30 @@ include(ROOT_PATH . '/app/includes/header.php');
             <div class="col-md-12">
               <div class="row">
 
-                <div class="col-md-4">
-                  <div class="card-box-b card-shadow news-box">
-                    <div class="img-box-b">
-                      <img src="img/innocencepot.jpg" alt="" class="img-b img-fluid">
-                    </div>
-                    <div class="card-overlay">
-                      <div class="card-header-b">
-                        <div class="card-category-b">
-                          <a href="lossofinnocence.php" class="category-b">Poetry</a>
-                        </div>
-                        <div class="card-title-b">
-                          <h2 class="title-2">
-                            <a href="lossofinnocence.php">Loss of
-                              <br> Innocence </a>
-                          </h2>
-                        </div>
-                        <div class="card-date">
-                          <span class="date-b">©️ The Writing Doctor</span>
+                <?php foreach ($posts as $post) : ?>
+                  <div class="col-md-4">
+                    <div class="card-box-b card-shadow news-box" style="height: 250px;">
+                      <div class="img-box-b" style="height: 250px;">
+                        <img src="<?php echo BASE_URL . '/img/blog_img/' . $post['image']; ?>" alt="" class="img-b img-fluid" style="height: 250px; width: auto; object-fit:cover;">
+                      </div>
+                      <div class="card-overlay">
+                        <div class="card-header-b">
+                          <div class="card-title-b">
+                            <h2 class="title-2">
+                              <a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
+                            </h2>
+                          </div>
+                          <div class="card-date">
+                            <span class="date-b"><?php echo $post['author']; ?></span>
+                          </div>
+                          <div class="card-category-b" style="margin-top: 10px">
+                            <a href="single.php?id=<?php echo $post['id']; ?>" class="category-b"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?> </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card-box-b card-shadow news-box">
-                    <div class="img-box-b">
-                      <img src="img/wishespot.jpg" alt="" class="img-b img-fluid">
-                    </div>
-                    <div class="card-overlay">
-                      <div class="card-header-b">
-                        <div class="card-category-b">
-                          <a href="wishes.php" class="category-b">Inspirational</a>
-                        </div>
-                        <div class="card-title-b">
-                          <h2 class="title-2">
-                            <a href="wishes.php">Wishes</a>
-                          </h2>
-                        </div>
-                        <div class="card-date">
-                          <span class="date-b">Tochi Izuheihe</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card-box-b card-shadow news-box">
-                    <div class="img-box-b">
-                      <img src="img/happymen.jpg" alt="" class="img-b img-fluid">
-                    </div>
-                    <div class="card-overlay">
-                      <div class="card-header-b">
-                        <div class="card-category-b">
-                          <a href="happymen.php" class="category-b">Life</a>
-                        </div>
-                        <div class="card-title-b">
-                          <h2 class="title-2">
-                            <a href="happymen.php">7 Habits of Happy Men</a>
-                          </h2>
-                        </div>
-                        <div class="card-date">
-                          <span class="date-b">Icheka Ozuru</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card-box-b card-shadow news-box">
-                    <div class="img-box-b">
-                      <img src="img/costume.jpg" alt="" class="img-b img-fluid">
-                    </div>
-                    <div class="card-overlay">
-                      <div class="card-header-b">
-                        <div class="card-category-b">
-                          <a href="costume.php" class="category-b">Life</a>
-                        </div>
-                        <div class="card-title-b">
-                          <h2 class="title-2">
-                            <a href="costume.php">Costume Party</a>
-                          </h2>
-                        </div>
-                        <div class="card-date">
-                          <span class="date-b">Idakwo Fervent</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="card-box-b card-shadow news-box">
-                    <div class="img-box-b">
-                      <img src="img/beingsinglepot.jpg" alt="" class="img-b img-fluid">
-                    </div>
-                    <div class="card-overlay">
-                      <div class="card-header-b">
-                        <div class="card-category-b">
-                          <a href="beingsingle.php" class="category-b"> Life </a>
-                        </div>
-                        <div class="card-title-b">
-                          <h2 class="title-2">
-                            <a href="beingsingle.php">Being Single</a>
-                          </h2>
-                        </div>
-                        <div class="card-date">
-                          <span class="date-b">www.verilymag.com</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <?php endforeach; ?>
 
               </div>
               <!-- <div class="row">
@@ -346,12 +196,25 @@ include(ROOT_PATH . '/app/includes/header.php');
           <!--/ Intro Single End /-->
 
           <div class="col-md-12">
+            <form class="form-a" action="blog.php" method="post">
+              <div class="row">
+                <div class="col-md-12 mb-2">
+                  <div class="form-group">
+                    <label for="Type" style="font-size: 1.1rem; color: #008dc9;">Search Post</label>
+                    <input type="text" name="search-term" class="form-control form-control-lg form-control-a" placeholder="Keyword" height="28px">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-12">
             <div class="topics-wrapper">
               <div class="left-side-bar">
                 <ul>
 
                   <?php foreach ($topics as $key => $topic) : ?>
-                    <li><a href="#"> <?php echo $topic['name']; ?> </a></li>
+                    <li><a href="<?php echo BASE_URL . '/blog.php?t_id=' . $topic['id'] . '&name=' . $topic['name']; ?>"> <?php echo $topic['name']; ?> </a></li>
                   <?php endforeach; ?>
 
                 </ul>

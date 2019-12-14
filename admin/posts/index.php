@@ -43,7 +43,7 @@ include(ROOT_PATH . '/app/includes/adminheader.php');
                         <tr>
                             <td> <?php echo $key + 1; ?> </td>
                             <td> <?php echo $post['title']; ?> </td>
-                            <td>gamsam</td>
+                            <td> <?php echo $post['author']; ?> </td>
                             <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="btn btn-sm btn-b-n">Edit</a></td>
                             <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="btn btn-sm btn-danger">Delete</a></td>
 
