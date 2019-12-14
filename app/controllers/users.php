@@ -2,6 +2,7 @@
   ob_start();
   include(ROOT_PATH . '/app/database/db.php');
   include(ROOT_PATH . '/app/helpers/validateUser.php');
+  include_once(ROOT_PATH . '/app/helpers/middleware.php');
 
   $table = 'users';
 
@@ -82,6 +83,7 @@
 
 
   if (isset($_POST['update-user'])) {
+    usersOnly();
     $errors = validateUser($_POST);
 
     if (count($errors) === 0) {
@@ -136,6 +138,7 @@
 
 
   if (isset($_GET['delete_id'])) {
+    adminOnly();
     $count = delete($table, $_GET['delete_id']);
     $_SESSION['message'] = 'User deleted';
     $_SESSION['type'] = 'alert-success';

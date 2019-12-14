@@ -9,7 +9,9 @@ function customPageHeader()
 <?php }
 
 include(ROOT_PATH . '/app/controllers/users.php');
+include_once(ROOT_PATH . '/app/helpers/middleware.php');
 include(ROOT_PATH . '/app/includes/adminheader.php');
+adminOnly();
 
 ?>
 

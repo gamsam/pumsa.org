@@ -1,6 +1,9 @@
 <?php
 
 include_once('path.php');
+include_once(ROOT_PATH . '/app/helpers/middleware.php');
+guestsOnly();
+
 $PageTitle = "PUMSA - Login";
 
 function customPageHeader()

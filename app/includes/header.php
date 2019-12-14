@@ -1,5 +1,4 @@
 <?php $page = basename($_SERVER['PHP_SELF']); ?>
-<!-- <?php include_once('../../path.php'); ?> -->
 
 <!DOCTYPE html>
 <html lang="en">

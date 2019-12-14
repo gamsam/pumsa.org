@@ -2,6 +2,9 @@
 
 include_once('path.php');
 include(ROOT_PATH . '/app/database/db.php');
+include_once(ROOT_PATH . '/app/helpers/middleware.php');
+usersOnly();
+
 $PageTitle="PUMSA - Academics";
 
 function customPageHeader(){?>

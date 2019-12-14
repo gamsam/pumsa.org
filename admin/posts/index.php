@@ -1,6 +1,9 @@
 <?php
 
 include_once('../../path.php');
+include_once(ROOT_PATH . '/app/helpers/middleware.php');
+adminOnly();
+
 $PageTitle = "PUMSA - Admin: Manage Posts";
 
 function customPageHeader()

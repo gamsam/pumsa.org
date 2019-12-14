@@ -1,6 +1,9 @@
 <?php
 
 include_once('../path.php');
+include(ROOT_PATH . '/app/controllers/posts.php');
+adminOnly();
+
 $PageTitle = "PUMSA - Admin Section: Dashboard";
 
 function customPageHeader()
@@ -8,7 +11,6 @@ function customPageHeader()
 
 <?php }
 
-include(ROOT_PATH . '/app/controllers/posts.php');
 include(ROOT_PATH . '/app/includes/adminheader.php');
 
 ?>
