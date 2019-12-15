@@ -6,6 +6,7 @@ include(ROOT_PATH . '/app/database/db.php');
 $posts = array();
 
 $posts = selectAll('posts', ['published' => 1]);
+$newss = selectAll('news', ['published' => 1]);
 
 $PageTitle = "PUMSA - Selfless Service to Mankind";
 
@@ -251,110 +252,40 @@ include(ROOT_PATH . '/app/includes/header.php');
 		</div>
 		<div id="property-carousel" class="owl-carousel owl-theme">
 
-			<div class="carousel-item-b">
-				<div class="card-box-a card-shadow">
-					<div class="img-box-a">
-						<img src="img/aidsday.jpg" alt="VC, DVC Joins Walk as PUMSA Participates in 2019 WORLD AIDS DAY Celebration" class="img-a img-fluid">
-					</div>
-					<div class="card-overlay">
-						<div class="card-overlay-a-content">
-							<div class="card-header-a">
-								<h2 class="card-title-a">
-									<a href="aidsday.php"> VC, DVC Joins Walk
-										<br> as PUMSA Participates in 2019 WORLD AIDS DAY Celebration </a>
-								</h2>
-							</div>
-							<div class="card-body-a">
-								<div class="price-box d-flex">
-									<span class="price-a">2nd December</span>
-								</div>
-								<a href="aidsday.php" class="link-a">Click to learn more
-									<span class="ion-ios-arrow-forward"></span>
-								</a>
-							</div>
-							<div class="card-footer-a">
-								<ul class="card-info d-flex justify-content-around">
-									<li>
-										<h4 class="card-info-title">World</h4>
-										<span>Aids Day
-										</span>
-									</li>
-								</ul>
-							</div>
+			<?php foreach ($newss as $news) : ?>
+				<div class="carousel-item-b">
+					<div class="card-box-a card-shadow" style="height: 350px;">
+						<div class="img-box-a" style="height: 350px;">
+							<img src="<?php echo BASE_URL . '/img/news_img/' . $news['image']; ?>" alt="" class="img-a img-fluid" style="height: 350px; object-fit: cover;">
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item-b">
-				<div class="card-box-a card-shadow">
-					<div class="img-box-a">
-						<img src="img/pumsagoogle.jpg" alt="" class="img-a img-fluid">
-					</div>
-					<div class="card-overlay">
-						<div class="card-overlay-a-content">
-							<div class="card-header-a">
-								<h2 class="card-title-a">
-									<a href="pumsagoogle.php"> PUMSA Powered
-										<br> Google Digital Skills Training </a>
-								</h2>
-							</div>
-							<div class="card-body-a">
-								<div class="price-box d-flex">
-									<span class="price-a">23rd November</span>
+						<div class="card-overlay">
+							<div class="card-overlay-a-content">
+								<div class="card-header-a">
+									<h2 class="card-title-a">
+										<a href="singlenews.php?id=<?php echo $news['id']; ?>"> <?php echo $news['title']; ?> </a>
+									</h2>
 								</div>
-								<a href="pumsagoogle.php" class="link-a">Click to learn more
-									<span class="ion-ios-arrow-forward"></span>
-								</a>
-							</div>
-							<div class="card-footer-a">
-								<ul class="card-info d-flex justify-content-around">
-									<li>
-										<h4 class="card-info-title">Venue</h4>
-										<span>Faculty of Clinical Sciences
-										</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item-b">
-				<div class="card-box-a card-shadow">
-					<div class="img-box-a">
-						<img src="img/uniportmedic.jpeg" alt="" class="img-a img-fluid">
-					</div>
-					<div class="card-overlay">
-						<div class="card-overlay-a-content">
-							<div class="card-header-a">
-								<h2 class="card-title-a">
-									<a href="uniportmedic.php"> UNIPORT Medic emerges winner
-										<br /> at face of Health-Care Expo</a>
-								</h2>
-							</div>
-							<div class="card-body-a">
-								<div class="price-box d-flex">
-									<span class="price-a">November, 2019</span>
+								<div class="card-body-a">
+									<div class="price-box d-flex">
+										<span class="price-a"><?php echo html_entity_decode(substr($news['body'], 0, 100) . '...'); ?></span>
+									</div>
+									<a href="singlenews.php?id=<?php echo $news['id']; ?>" class="link-a">Click here to read more
+										<span class="ion-ios-arrow-forward"></span>
+									</a>
 								</div>
-								<a href="uniportmedic.php" class="link-a">Click to learn more
-									<span class="ion-ios-arrow-forward"></span>
-								</a>
-							</div>
-							<!-- <div class="card-footer-a">
+								<div class="card-footer-a">
 									<ul class="card-info d-flex justify-content-around">
 										<li>
 											<h4 class="card-info-title">Date</h4>
-											<span>November 2019
-											</span>
+											<span><?php echo date('F j, Y', strtotime($news['created_at'])); ?></span>
 										</li>
 									</ul>
-								</div> -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			<?php endforeach; ?>
 
 		</div>
 	</div>

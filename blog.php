@@ -148,7 +148,7 @@ include(ROOT_PATH . '/app/includes/header.php');
                 <?php endforeach; ?>
 
               </div>
-              <!-- <div class="row">
+              <div class="row">
                   <div class="col-sm-12">
                     <nav class="pagination-a">
                       <ul class="pagination justify-content-end">
@@ -157,24 +157,24 @@ include(ROOT_PATH . '/app/includes/header.php');
                             <span class="ion-ios-arrow-back"></span>
                           </a>
                         </li>
-                        <li class="page-item">
-                          <a class="page-link" href="gallery2.php">1</a>
-                        </li>
                         <li class="page-item active">
-                          <a class="page-link" href="gallery3.php">2</a>
+                          <a class="page-link" href="#">1</a>
                         </li>
-                        <li class="page-item">
-                          <a class="page-link" href="gallery4.php">3</a>
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#">3</a>
                         </li>
                         <li class="page-item next">
-                          <a class="page-link" href="gallery2.php">
+                          <a class="page-link" href="#">
                             <span class="ion-ios-arrow-forward"></span>
                           </a>
                         </li>
                       </ul>
                     </nav>
                   </div>
-                </div> -->
+                </div>
             </div>
           </section>
           <!--/ News Grid End /-->
