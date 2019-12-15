@@ -48,28 +48,55 @@
   }
 
 
-  if (isset($_POST['signup-btn']) || isset($_POST['create-user'])) {
+  if (isset($_POST['signup-btn'])) {
     $errors = validateUser($_POST);
 
     if (count($errors) === 0) {
 
-        unset($_POST['signup-btn'], $_POST['passwordConf'], $_POST['create-user']);
-        $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+      unset($_POST['signup-btn'], $_POST['passwordConf']);
+      $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-        if (isset($_POST['admin'])) {
-          $_POST['admin'] = 1;
-          $user_id = create($table, $_POST);
-          $_SESSION['message'] = 'Admin user created sucessfully';
-          $_SESSION['type'] = 'alert-success';
-          header('location: ' . BASE_URL . '/admin/users/index.php');
-          exit();
+      $_POST['admin'] = 0;
+      $user_id = create($table, $_POST);
+      $user = selectOne($table, ['id' => $user_id]);
+      loginUser($user);
+      }
+        
+     else {
+      $username = $_POST['username'];
+      $email = $_POST['email'];
+      $password = $_POST['password'];
+      $passwordConf = $_POST['passwordConf'];
+    }
 
-        } else {
-          $_POST['admin'] = 0;
-          $user_id = create($table, $_POST);
-          $user = selectOne($table, ['id' => $user_id]);
-          loginUser($user);
-        }
+  }
+
+
+  if (isset($_POST['create-user'])) {
+    adminOnly();
+    $errors = validateUser($_POST);
+
+    if (count($errors) === 0) {
+
+      unset($_POST['passwordConf'], $_POST['create-user']);
+      $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+      if (isset($_POST['admin'])) {
+        $_POST['admin'] = 1;
+        $user_id = create($table, $_POST);
+        $_SESSION['message'] = 'Admin user created sucessfully';
+        $_SESSION['type'] = 'alert-success';
+        header('location: ' . BASE_URL . '/admin/users/index.php');
+        exit();
+
+      } else {
+        $_POST['admin'] = 0;
+        $user_id = create($table, $_POST);
+        $_SESSION['message'] = 'User created sucessfully';
+        $_SESSION['type'] = 'alert-success';
+        header('location: ' . BASE_URL . '/admin/users/index.php');
+        exit();
+      }
         
     } else {
       $username = $_POST['username'];
