@@ -323,14 +323,14 @@ include(ROOT_PATH . '/app/includes/header.php');
 							<div class="card-header-b">
 								<div class="card-title-b">
 									<h2 class="title-2">
-										<a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
+										<a href="singleblog.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
 									</h2>
 								</div>
 								<div class="card-date">
 									<span class="date-b"><?php echo $post['author']; ?></span>
 								</div>
 								<div class="card-category-b" style="margin-top: 10px">
-									<a href="single.php?id=<?php echo $post['id']; ?>" class="category-b"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?> </a>
+									<a href="singleblog.php?id=<?php echo $post['id']; ?>" class="category-b"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?> </a>
 								</div>
 							</div>
 						</div>

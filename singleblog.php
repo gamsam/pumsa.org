@@ -147,7 +147,7 @@ function customPageHeader()
                   <div class="card-header-b">
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="single.php?id=<?php echo $p['id']; ?>"><?php echo $p['title']; ?></a>
+                        <a href="singleblog.php?id=<?php echo $p['id']; ?>"><?php echo $p['title']; ?></a>
                       </h2>
                     </div>
                     <div class="card-date">
