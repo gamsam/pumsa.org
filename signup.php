@@ -57,26 +57,22 @@ include(ROOT_PATH . '/app/includes/header.php');
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <div class="form-group">
-                    <input type="text" name="username" value="<?php echo $username; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Username" data-rule="minlen:4" data-msg="Please enter your username">
-                    <div class="validation"></div>
+                    <input type="text" name="username" value="<?php echo $username; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Username"></div>
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
                   <div class="form-group">
-                    <input name="email" type="email" value="<?php echo $email; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                    <div class="validation"></div>
+                    <input name="email" type="email" value="<?php echo $email; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Email">
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
                   <div class="form-group">
-                    <input type="password" name="password" value="<?php echo $password; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Password" data-rule="minlen:6" data-msg="Please enter a minimum of 6 characters">
-                    <div class="validation"></div>
+                    <input type="password" name="password" value="<?php echo $password; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Password">
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
                   <div class="form-group">
-                    <input type="password" name="passwordConf" value="<?php echo $passwordConf; ?>" class="form-control form-control-lg form-control-a" placeholder="Repeat Password" data-rule="minlen:6" data-msg="Please enter a minimum of 6 characters">
-                    <div class="validation"></div>
+                    <input type="password" name="passwordConf" value="<?php echo $passwordConf; ?>" class="form-control form-control-lg form-control-a" placeholder="Repeat Password">
                   </div>
                 </div>
                 <div class="col-md-12" style="text-align: center;">

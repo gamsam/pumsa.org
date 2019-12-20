@@ -3,7 +3,7 @@
             
             <div class="container" style="text-align: center;">
               <!-- ================= -->
-              <strong>Share to:</strong> <br>
+              <strong>Sharing is caring:</strong> <br>
               <!-- Go to www.addthis.com/dashboard to customize your tools -->
               <div class="addthis_inline_share_toolbox"></div>
               <!-- ================= -->
@@ -117,7 +117,7 @@
 
 <div class="container" style="text-align: center;">
     <!-- ================= -->
-    <strong>Share to:</strong> <br>
+    <strong>Sharing is caring:</strong> <br>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <div class="addthis_inline_share_toolbox"></div>
     <!-- ================= -->
