@@ -109,7 +109,7 @@ if (isset($_POST['update-news'])) {
         unset($_POST['update-news'], $_POST['id']);
         $_POST['published'] = isset($_POST['published']) ? 1 : 0;
 
-        // To avoid cross-site scripting and remove html from body of news
+        //// To avoid cross-site scripting and remove html from body of news
         $_POST['body'] = htmlentities($_POST['body']);
 
         $news_id = update($table, $id, $_POST);

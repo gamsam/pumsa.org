@@ -21,7 +21,7 @@ include(ROOT_PATH . '/app/includes/header.php');
       <div class="col-md-12 col-lg-8">
         <div class="title-single-box">
           <h1 class="title-single">Contact US</h1>
-          <span class="color-text-a">Contact us for any inquiries, ideas, collaborations, sponsorship or compaints and we will get back to you shortly.</span>
+          <span class="color-text-a">Contact us for any inquiries, ideas, collaborations, sponsorship or complaints and we will get back to you shortly.</span>
         </div>
       </div>
       <div class="col-md-12 col-lg-4">
@@ -90,7 +90,7 @@ include(ROOT_PATH . '/app/includes/header.php');
               </div>
               <div class="col-md-12 mb-3">
                 <div class="form-group">
-                  <input type="text" name="subject" value="<?php echo $subject; ?>"class="form-control form-control-lg form-control-a" placeholder="Subject">
+                  <input type="text" name="subject" value="<?php echo $subject; ?>" class="form-control form-control-lg form-control-a" placeholder="Subject">
                 </div>
               </div>
               <div class="col-md-12 mb-3">
@@ -133,7 +133,7 @@ include(ROOT_PATH . '/app/includes/header.php');
               </div>
               <div class="icon-box-content">
                 <p class="mb-1">
-                  PUMSA Secreteriat, 3rd floor Clinical Students' Quarters,
+                  PUMSA Secretariat, 3rd floor Clinical Students' Quarters,
                   <br> University of Port Harcourt, Choba
                   <br> Rivers State, Nigeria
                 </p>
@@ -179,7 +179,6 @@ include(ROOT_PATH . '/app/includes/header.php');
         </div>
       </div>
     </div>
-  </div>
   </div>
 </section>
 <!--/ Contact End /-->

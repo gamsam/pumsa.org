@@ -2,9 +2,10 @@
 
 include_once('path.php');
 include(ROOT_PATH . '/app/database/db.php');
-$PageTitle="PUMSA - Calendar";
+$PageTitle = "PUMSA - Calendar";
 
-function customPageHeader(){?>
+function customPageHeader()
+{ ?>
 
 <?php }
 
@@ -117,30 +118,30 @@ include(ROOT_PATH . '/app/includes/header.php');
 <!--/ Intro Single End /-->
 
 <!--/ Property Grid Star /-->
-  <section class="property-grid grid">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="img/pumsaeyes.jpg" alt="PUMSA End of year events" class="img-a img-fluid">
-            </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="pumsaeyes.php">PUMSA End of Year Events (EYES) </a>
-                  </h2>
+<section class="property-grid grid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card-box-a card-shadow">
+          <div class="img-box-a">
+            <img src="img/pumsaeyes.jpg" alt="PUMSA End of year events" class="img-a img-fluid">
+          </div>
+          <div class="card-overlay">
+            <div class="card-overlay-a-content">
+              <div class="card-header-a">
+                <h2 class="card-title-a">
+                  <a href="pumsaeyes.php">PUMSA End of Year Events (EYES) </a>
+                </h2>
+              </div>
+              <div class="card-body-a">
+                <div class="price-box d-flex">
+                  <span class="price-a">9th-13th December, 2019</span>
                 </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">9th-13th December, 2019</span>
-                  </div>
-                  <a href="pumsaeyes.php" class="link-a">Click here to read
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
-                </div>
-                <!-- <div class="card-footer-a">
+                <a href="pumsaeyes.php" class="link-a">Click here to read
+                  <span class="ion-ios-arrow-forward"></span>
+                </a>
+              </div>
+              <!-- <div class="card-footer-a">
                   <ul class="card-info d-flex justify-content-around">
                     <li>
                       <h4 class="card-info-title">Date</h4>
@@ -148,13 +149,13 @@ include(ROOT_PATH . '/app/includes/header.php');
                     </li>
                   </ul>
                 </div> -->
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 <?php include(ROOT_PATH . '/app/includes/footer.php'); ?>
