@@ -148,6 +148,7 @@ include(ROOT_PATH . '/app/includes/header.php');
                 <?php endforeach; ?>
 
               </div>
+
               <div class="row">
                 <div class="col-sm-12">
                   <nav class="pagination-a">
