@@ -1,16 +1,14 @@
 <?php
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db_name = "pumsa";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db_name = "pumsa";
 
-    $conn = new MySQLi($host, $user, $pass, $db_name);
+$conn = new MySQLi($host, $user, $pass, $db_name);
 
-    if ($conn->connect_error) {
-        die('Database connection error: ' .$conn->connect_error);
-    } else {
-        echo "DB Connection Succesful!";
-    }
-
-?>
+if ($conn->connect_error) {
+    die('Database connection error: ' . $conn->connect_error);
+} else {
+    echo "DB Connection Succesful!";
+}
