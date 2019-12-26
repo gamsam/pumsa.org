@@ -19,14 +19,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="<?php echo BASE_URL . '/lib/bootstrap/css/bootstrap.min.css' ?>" rel="stylesheet">
-
   <!-- Libraries CSS Files -->
-  <link href="<?php echo BASE_URL . '/lib/font-awesome/css/font-awesome.min.css' ?>" rel="stylesheet">
-  <link href="<?php echo BASE_URL . '/lib/animate/animate.min.css' ?>" rel="stylesheet">
-  <link href="<?php echo BASE_URL . '/lib/ionicons/css/ionicons.min.css' ?>" rel="stylesheet">
-  <link href="<?php echo BASE_URL . '/lib/owlcarousel/assets/owl.carousel.min.css' ?>" rel="stylesheet">
+  <link href="<?php echo BASE_URL . '/lib/combined.min.css' ?>" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="<?php echo BASE_URL . '/css/style.css' ?>" rel="stylesheet">
@@ -152,8 +146,8 @@
           <?php if (isset($_SESSION['id'])) : ?>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle <?php if ($page == 'dashboard.php' || $page == 'logout.php') {
-                                                      echo ' active"';
-                                                    } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    echo ' active"';
+                                                  } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user" style="color: #008dc9"></i>
                 <?php echo $_SESSION['username']; ?>
               </a>
@@ -169,8 +163,8 @@
           <?php else : ?>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle <?php if ($page == 'signup.php' || $page == 'login.php') {
-                                                      echo ' active"';
-                                                    } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    echo ' active"';
+                                                  } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user" style="color: #008dc9"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">

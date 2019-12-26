@@ -1,9 +1,12 @@
             <br>
             <br>
+            <hr>
 
             <div class="container" style="text-align: center;">
                 <!-- ================= -->
-                <strong>Sharing is caring:</strong> <br>
+                <strong>Sharing is caring:</strong>
+                <br>
+                <br>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox"></div>
                 <!-- ================= -->
@@ -111,10 +114,13 @@
 
             <br>
             <br>
+            <hr>
 
             <div class="container" style="text-align: center;">
                 <!-- ================= -->
-                <strong>Sharing is caring:</strong> <br>
+                <strong>Sharing is caring:</strong>
+                <br>
+                <br>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox"></div>
                 <!-- ================= -->
