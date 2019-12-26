@@ -7,11 +7,13 @@ $posts = array();
 
 $posts = selectAll('posts', ['published' => 1]);
 $newss = selectAll('news', ['published' => 1]);
+$sliders = selectAll('sliders', ['published' => 1]);
 
 $PageTitle = "PUMSA - Selfless Service to Mankind";
 
 function customPageHeader()
-{ }
+{
+}
 
 include(ROOT_PATH . '/app/includes/header.php');
 
@@ -20,6 +22,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 <!--/ Carousel Home /-->
 <div class="intro intro-carousel">
 	<div id="carousel" class="owl-carousel owl-theme">
+
 		<div class="carousel-item-a intro-item bg-image" style="background-image: url(img/gallery-4.jpg)">
 			<div class="overlay overlay-a"></div>
 			<div class="intro-content display-table">
@@ -32,7 +35,6 @@ include(ROOT_PATH . '/app/includes/header.php');
 										Welcome to <br>
 										<span class="color-b"> PUMSA </span>
 									</h1>
-
 									<p class="intro-title-top"> Official Website of the Port Harcourt University Medical Students' Association
 										<br> Selfless Service to mankind </p>
 									<p class="intro-subtitle intro-price">
@@ -116,7 +118,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 			</div>
 		</div>
 
-		<div class="carousel-item-a intro-item bg-image" style="background-image: url(img/aidsdayhome.jpg)">
+		<div class="carousel-item-a intro-item bg-image" style="background-image: url(img/news_img/1576376726-aidsdayhome.jpg)">
 			<div class="overlay overlay-a"></div>
 			<div class="intro-content display-table">
 				<div class="table-cell">
@@ -139,6 +141,29 @@ include(ROOT_PATH . '/app/includes/header.php');
 				</div>
 			</div>
 		</div>
+
+		<?php foreach ($sliders as $slider) : ?>
+			<div class="carousel-item-a intro-item bg-image" style="background-image: url(<?php echo BASE_URL . '/img/slider_img/' . $slider['image']; ?>)">
+				<div class="overlay overlay-a"></div>
+				<div class="intro-content display-table">
+					<div class="table-cell">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="intro-body">
+										<h1 class="intro-title mb-4"> <?php echo $slider['title']; ?> </h1>
+										<p class="intro-title-top"> <?php echo html_entity_decode($slider['body']); ?> </p>
+										<p class="intro-subtitle intro-price">
+											<a href="<?php echo $slider['link']; ?>"><span class="price-a">Learn More</span></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php endforeach; ?>
 
 	</div>
 </div>
