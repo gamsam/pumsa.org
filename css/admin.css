@@ -1,5 +1,5 @@
 .navbar-default {
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 html {
@@ -43,6 +43,14 @@ body {
     background-color: black;
 }
 
+.admin-wrapper .admin-content .content .jumbotron .lead a:hover {
+    color: aliceblue;
+    border-radius: 0px;
+    font-weight: 300;
+    background-color: black;
+    outline: none;
+}
+
 .admin-wrapper .admin-content {
     flex: 8;
     height: 100%;
@@ -66,7 +74,8 @@ table {
     font-size: 0.9rem;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #008dc9;

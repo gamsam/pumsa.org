@@ -94,30 +94,6 @@ include(ROOT_PATH . '/app/includes/header.php');
 			</div>
 		</div>
 
-		<div class="carousel-item-a intro-item bg-image" style="background-image: url(img/pumsaeyeshome.jpg)">
-			<div class="overlay overlay-a"></div>
-			<div class="intro-content display-table">
-				<div class="table-cell">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-8">
-								<div class="intro-body">
-									<h1 class="intro-title mb-4">
-										<span class="color-b"> PUMSA </span>
-										<br> End of Year Events (EYE)</h1>
-									<p class="intro-title-top">9th - 13th December
-										<br> 2019 </p>
-									<p class="intro-subtitle intro-price">
-										<a href="events.php"><span class="price-a">Learn More</span></a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="carousel-item-a intro-item bg-image" style="background-image: url(img/news_img/1576376726-aidsdayhome.jpg)">
 			<div class="overlay overlay-a"></div>
 			<div class="intro-content display-table">
