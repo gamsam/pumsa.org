@@ -103,8 +103,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 							<div class="col-lg-8">
 								<div class="intro-body">
 									<h1 class="intro-title mb-4">
-										<span class="color-b"> VC, DVC </span> Joins Walk as
-										<br> PUMSA Participates in 2019 WORLD AIDS DAY Celebration </h1>
+										<span class="color-b"> VC, DVC </span> Joins Walk as PUMSA Participates in 2019 WORLD AIDS DAY Celebration </h1>
 									<p class="intro-title-top"> 2nd December,
 										<br> 2019 </p>
 									<p class="intro-subtitle intro-price">

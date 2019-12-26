@@ -2,7 +2,8 @@
 <section class="section-footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-4">
+
+      <div class="col-sm-12 col-md-6">
         <div class="widget-a">
           <div class="w-header-a">
             <h3 class="w-title-a text-brand">PUMSA</h3>
@@ -22,7 +23,8 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 section-md-t3">
+
+      <div class="col-sm-12 col-md-6 section-md-t3">
         <div class="widget-a">
           <div class="w-header-a">
             <h3 class="w-title-a text-brand">Quick Links</h3>
@@ -54,11 +56,11 @@
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-4 section-md-t3">
+      <!-- <div class="col-sm-12 col-md-4 section-md-t3">
         <div class="col-sm-12">
           <div class="contact-map box">
             <div id="map" class="contact-map">
-              <!-- <div class="mapouter">
+              <div class="mapouter">
                 <div class="gmap_canvas"><iframe width="100%" height="200px" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20port%20harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
                 <style>
                   .mapouter {
@@ -75,11 +77,12 @@
                     width: 100%;
                   }
                 </style>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+
     </div>
 </section>
 
