@@ -575,7 +575,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 <div id="preloader"></div>
 
 <!-- JavaScript Libraries -->
-<script src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
+<script defer src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
 
 <!--  Main Javascript File -->
 <script src="js/main.js"></script>

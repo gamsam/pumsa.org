@@ -152,7 +152,7 @@
 <div id="preloader"></div>
 
 <!-- JavaScript Libraries -->
-<script src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
+<script defer src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
 
 <!-- Template Main Javascript File -->
 <script src="<?php echo BASE_URL . '/js/main.js' ?>"></script>
