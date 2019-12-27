@@ -27,7 +27,11 @@
   <link href="<?php echo BASE_URL . '/css/blogstyle.css' ?>" rel="stylesheet">
 
   <!-- Fancy Box -->
-  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 
   <!-- Start of Tawk.to Script -->
   <script defer type="text/javascript">
