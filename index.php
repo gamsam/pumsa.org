@@ -563,7 +563,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 					</p>
 				</div>
 				<div class="credits">
-					Developed by <a href="https://patchcastle.com/">@gamsam | Patch Castle</a>
+					Developed by <a href="https://patchcastle.com/"> <span class="color-b"> @gamsam | Patch Castle </span></a>
 				</div>
 			</div>
 		</div>
