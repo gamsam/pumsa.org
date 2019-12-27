@@ -153,7 +153,7 @@
 
 <!-- JavaScript Libraries -->
 <script defer src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
-<script src="<?php echo BASE_URL . '/lib/lazysizes.js' ?>" defer></script>
+<script src="<?php echo BASE_URL . '/lib/lazysizes.min.js' ?>" async></script>
 
 <!-- Template Main Javascript File -->
 <script defer src="<?php echo BASE_URL . '/js/main.js' ?>"></script>
