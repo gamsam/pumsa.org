@@ -256,7 +256,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 				<div class="carousel-item-b">
 					<div class="card-box-a card-shadow" style="height: 350px;">
 						<div class="img-box-a" style="height: 350px;">
-							<img src="<?php echo BASE_URL . '/img/news_img/' . $news['image']; ?>" alt="" class="img-a img-fluid" style="height: 350px; object-fit: cover;">
+							<img class="lazyload" data-src="<?php echo BASE_URL . '/img/news_img/' . $news['image']; ?>" alt="" class="img-a img-fluid" style="height: 350px; object-fit: cover;">
 						</div>
 						<div class="card-overlay">
 							<div class="card-overlay-a-content">
@@ -317,7 +317,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 				<div class="carousel-item-c">
 					<div class="card-box-b card-shadow news-box" style="height: 350px;">
 						<div class="img-box-b" style="height: 350px;">
-							<img src="<?php echo BASE_URL . '/img/blog_img/' . $post['image']; ?>" alt="" class="img-b img-fluid" style="height: 350px; object-fit: cover;">
+							<img class="lazyload" data-src="<?php echo BASE_URL . '/img/blog_img/' . $post['image']; ?>" alt="" class="img-b img-fluid" style="height: 350px; object-fit: cover;">
 						</div>
 						<div class="card-overlay">
 							<div class="card-header-b">
@@ -370,7 +370,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 								</p>
 							</div>
 							<div class="testimonial-author-box">
-								<img src="img/ezinwa.jpg" alt="" class="testimonial-avatar">
+								<img class="lazyload" data-src="img/ezinwa.jpg" alt="" class="testimonial-avatar">
 								<h5 class="testimonial-author">Ezinwa Kelvin</h5>
 							</div>
 						</div>
@@ -391,7 +391,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 								</p>
 							</div>
 							<div class="testimonial-author-box">
-								<img src="img/henry.jpg" alt="" class="testimonial-avatar">
+								<img class="lazyload" data-src="img/henry.jpg" alt="" class="testimonial-avatar">
 								<h5 class="testimonial-author">Henry Okpulor</h5>
 							</div>
 						</div>
@@ -468,7 +468,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 						<div id="map" class="contact-map">
 							<div class="mapouter">
 								<div class="gmap_canvas">
-									<iframe width="100%" height="450px" id="gmap_canvas" src="" data-src="https://maps.google.com/maps?q=university%20of%20port%20harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+									<iframe class="lazyload" width="100%" height="450px" id="gmap_canvas" src="" data-src="https://maps.google.com/maps?q=university%20of%20port%20harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
 								<style>
 									.mapouter {
 										position: relative;

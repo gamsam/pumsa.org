@@ -50,7 +50,7 @@ include(ROOT_PATH . '/app/includes/header.php');
           <div id="map" class="contact-map">
             <div class="mapouter">
               <div class="gmap_canvas">
-                <iframe width="100%" height="450px" id="gmap_canvas" src="" data-src="https://maps.google.com/maps?q=university%20of%20port%20harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe class="lazyload" width="100%" height="450px" id="gmap_canvas" src="" data-src="https://maps.google.com/maps?q=university%20of%20port%20harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
               </div>
 
