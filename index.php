@@ -370,7 +370,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 								</p>
 							</div>
 							<div class="testimonial-author-box">
-								<img class="lazyload" data-src="img/ezinwa.jpg" alt="" class="testimonial-avatar">
+								<img src="img/ezinwa.jpg" alt="" class="testimonial-avatar">
 								<h5 class="testimonial-author">Ezinwa Kelvin</h5>
 							</div>
 						</div>
@@ -391,7 +391,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 								</p>
 							</div>
 							<div class="testimonial-author-box">
-								<img class="lazyload" data-src="img/henry.jpg" alt="" class="testimonial-avatar">
+								<img src="img/henry.jpg" alt="" class="testimonial-avatar">
 								<h5 class="testimonial-author">Henry Okpulor</h5>
 							</div>
 						</div>
