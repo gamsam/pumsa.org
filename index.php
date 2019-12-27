@@ -485,7 +485,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 									}
 								</style>
 
-								<script defer>
+								<script>
 									function init() {
 										var vidDefer = document.getElementsByTagName('iframe');
 										for (var i = 0; i < vidDefer.length; i++) {
