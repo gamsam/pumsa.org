@@ -266,9 +266,9 @@ include(ROOT_PATH . '/app/includes/header.php');
 									</h2>
 								</div>
 								<div class="card-body-a">
-									<div class="price-box d-flex">
+									<!-- <div class="price-box d-flex">
 										<span class="price-a"><?php echo html_entity_decode(substr($news['body'], 0, 100) . '...'); ?></span>
-									</div>
+									</div> -->
 									<a href="singlenews.php?id=<?php echo $news['id']; ?>" class="link-a">Click here to read more
 										<span class="ion-ios-arrow-forward"></span>
 									</a>
