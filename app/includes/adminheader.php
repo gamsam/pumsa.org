@@ -16,9 +16,6 @@
   <!-- Favicons -->
   <link href="<?php echo BASE_URL . '/img/favicon.png' ?>" rel="icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-
   <!-- Libraries CSS Files -->
   <link href="<?php echo BASE_URL . '/lib/combined.min.css' ?>" rel="stylesheet">
 

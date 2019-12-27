@@ -468,7 +468,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 						<div id="map" class="contact-map">
 							<div class="mapouter">
 								<div class="gmap_canvas">
-									<iframe width="100%" height="450px" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20port%20harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+									<iframe width="100%" height="450px" id="gmap_canvas" src="" data-src="https://maps.google.com/maps?q=university%20of%20port%20harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
 								<style>
 									.mapouter {
 										position: relative;
@@ -484,6 +484,19 @@ include(ROOT_PATH . '/app/includes/header.php');
 										width: 100%;
 									}
 								</style>
+
+								<script defer>
+									function init() {
+										var vidDefer = document.getElementsByTagName('iframe');
+										for (var i = 0; i < vidDefer.length; i++) {
+											if (vidDefer[i].getAttribute('data-src')) {
+												vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+											}
+										}
+									}
+									window.onload = init;
+								</script>
+
 							</div>
 						</div>
 					</div>
@@ -566,10 +579,6 @@ include(ROOT_PATH . '/app/includes/header.php');
 
 <!--  Main Javascript File -->
 <script src="js/main.js"></script>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5dda8c03a635b4a1"></script>
-
 
 </body>
 

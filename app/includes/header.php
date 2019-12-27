@@ -27,14 +27,10 @@
   <link href="<?php echo BASE_URL . '/css/blogstyle.css' ?>" rel="stylesheet">
 
   <!-- Fancy Box -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
+  <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
   <!-- Start of Tawk.to Script -->
-  <script type="text/javascript">
+  <script defer type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
     (function() {

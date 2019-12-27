@@ -158,7 +158,7 @@
 <script src="<?php echo BASE_URL . '/js/main.js' ?>"></script>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5dda8c03a635b4a1"></script>
+<script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5dda8c03a635b4a1"></script>
 
 
 </body>
