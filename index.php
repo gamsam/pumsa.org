@@ -578,7 +578,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 <script defer src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
 
 <!--  Main Javascript File -->
-<script src="js/main.js"></script>
+<script defer src="js/main.js"></script>
 
 </body>
 
