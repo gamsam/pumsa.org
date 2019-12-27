@@ -34,7 +34,7 @@
 
 
   <!-- Start of Tawk.to Script -->
-  <script defer type="text/javascript">
+  <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
     (function() {
@@ -70,19 +70,19 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link <?php if ($page == 'index.php') {
-                                  echo ' active"';
+                                  echo ' active';
                                 } ?>" href="index.php">Home </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link <?php if ($page == 'yellowpage.php') {
-                                  echo ' active"';
+                                  echo ' active';
                                 } ?>" href="yellowpage.php"> <span class="blink" style="color: #f4ca16;"> Yellow Page</span></a>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle <?php if ($page == 'history.php' || $page == 'profile.php' || $page == 'principles.php' || $page == 'executives.php' || $page == 'senate.php') {
-                                                  echo ' active"';
+                                                  echo ' active';
                                                 } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Our Association
             </a>
@@ -97,7 +97,7 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle <?php if ($page == 'newsletter.php' || $page == 'minutes.php' || $page == 'reports.php' || $page == 'election.php') {
-                                                  echo ' active"';
+                                                  echo ' active';
                                                 } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Publications
             </a>
@@ -111,7 +111,7 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle <?php if ($page == 'live.php' || $page == 'gallery.php' || $page == 'gallery2.php' || $page == 'news.php' || $page == 'blog.php' || $page == 'events.php') {
-                                                  echo ' active"';
+                                                  echo ' active';
                                                 } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Media Center
             </a>
@@ -126,7 +126,7 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle <?php if ($page == 'textbooks.php' || $page == 'pq.php') {
-                                                  echo ' active"';
+                                                  echo ' active';
                                                 } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Academics
             </a>
@@ -138,7 +138,7 @@
 
           <li class="nav-item">
             <a class="nav-link <?php if ($page == 'contact.php') {
-                                  echo ' active"';
+                                  echo ' active';
                                 } ?>" href="contact.php">Contact</a>
           </li>
 
@@ -163,7 +163,7 @@
           <?php else : ?>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle <?php if ($page == 'signup.php' || $page == 'login.php') {
-                                                    echo ' active"';
+                                                    echo ' active';
                                                   } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user" style="color: #008dc9"></i>
               </a>
