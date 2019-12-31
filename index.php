@@ -574,11 +574,11 @@ include(ROOT_PATH . '/app/includes/header.php');
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <!-- JavaScript Libraries -->
-<script defer src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
+<script src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
 <script src="<?php echo BASE_URL . '/lib/lazysizes.min.js' ?>" async></script>
 
 <!--  Main Javascript File -->
-<script defer src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
