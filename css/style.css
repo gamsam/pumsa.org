@@ -1194,8 +1194,7 @@ a:hover {
 .overlay-a {
   background: -webkit-gradient(
     linear,
-    left top,
-    left bottom,
+    left top, left bottom,
     from(rgba(0, 0, 0, 0)),
     color-stop(27%, rgba(0, 0, 0, 0.2)),
     color-stop(90%, rgba(0, 0, 0, 0.65))
@@ -1468,7 +1467,13 @@ ul.navbar-nav {
     -webkit-transform 0.2s ease-out;
   -webkit-transition: opacity 0.2s ease-out 0.3s,
     -webkit-transform 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out 0.3s,
+    -webkit-transform 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out 0.3s, -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s,
+    -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s,
     -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s,
@@ -1735,6 +1740,9 @@ ul.navbar-nav {
   transition: opacity 0.5s 0.5s ease, -webkit-transform 0.5s 0.5s ease;
   -webkit-transition: opacity 0.5s 0.5s ease, -webkit-transform 0.5s 0.5s ease;
   transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease;
+  transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease, -webkit-transform 0.5s 0.5s ease;
+  transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease,
+    -webkit-transform 0.5s 0.5s ease;
   transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease,
     -webkit-transform 0.5s 0.5s ease;
   transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease,
@@ -2019,8 +2027,7 @@ ul.navbar-nav {
   z-index: 1;
   background: -webkit-gradient(
     linear,
-    left top,
-    left bottom,
+    left top, left bottom,
     from(rgba(0, 0, 0, 0)),
     color-stop(0%, rgba(0, 0, 0, 0.2)),
     color-stop(0%, rgba(0, 0, 0, 0.65))
