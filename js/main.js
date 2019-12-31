@@ -5,7 +5,10 @@
 
   $(window).load(function() {
     $('body').removeClass('no-scroll-y');
-    $('#ctn-preloader').fadeOut('slow');
+    // $('#ctn-preloader').fadeOut('slow');
+    $('#ctn-preloader')
+      .delay(700)
+      .fadeOut('slow');
   });
 
   // Back to top button
