@@ -8,6 +8,7 @@ html {
 
 body {
     height: 100%;
+    font-weight: 600;
 }
 
 .admin-wrapper {
@@ -33,7 +34,7 @@ body {
     display: block;
     border-bottom: 1px solid aliceblue;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .admin-wrapper .left-side-bar ul li a:hover {

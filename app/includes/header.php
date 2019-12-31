@@ -51,7 +51,7 @@
 
 </head>
 
-<body>
+<body class="no-scroll-y">
 
   <!--/ Nav Star /-->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
@@ -74,10 +74,17 @@
                                 } ?>" href="index.php">Home </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link <?php if ($page == 'yellowpage.php') {
-                                  echo ' active';
-                                } ?>" href="yellowpage.php"> <span class="blink" style="color: #f4ca16;"> Yellow Page</span></a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle <?php if ($page == 'sponsorship.php' || $page == 'registration.php' || $page == 'timetable.php') {
+                                                  echo ' active';
+                                                } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span style="color: #139e21;"> NiMSA Games </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sponsorship.php">Sponsorship</a>
+              <a class="dropdown-item" href="registration.php">Registration</a>
+              <a class="dropdown-item" href="timetable.php">Timetable</a>
+            </div>
           </li>
 
           <li class="nav-item dropdown">

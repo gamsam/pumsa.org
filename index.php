@@ -256,7 +256,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 				<div class="carousel-item-b">
 					<div class="card-box-a card-shadow" style="height: 350px;">
 						<div class="img-box-a" style="height: 350px;">
-							<img class="lazyload" data-src="<?php echo BASE_URL . '/img/news_img/' . $news['image']; ?>" alt="" class="img-a img-fluid" style="height: 350px; object-fit: cover;">
+							<img src="<?php echo BASE_URL . '/img/news_img/' . $news['image']; ?>" alt="" class="img-a img-fluid" style="height: 350px; object-fit: cover;">
 						</div>
 						<div class="card-overlay">
 							<div class="card-overlay-a-content">
@@ -317,7 +317,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 				<div class="carousel-item-c">
 					<div class="card-box-b card-shadow news-box" style="height: 350px;">
 						<div class="img-box-b" style="height: 350px;">
-							<img class="lazyload" data-src="<?php echo BASE_URL . '/img/blog_img/' . $post['image']; ?>" alt="" class="img-b img-fluid" style="height: 350px; object-fit: cover;">
+							<img src="<?php echo BASE_URL . '/img/blog_img/' . $post['image']; ?>" alt="" class="img-b img-fluid" style="height: 350px; object-fit: cover;">
 						</div>
 						<div class="card-overlay">
 							<div class="card-header-b">
@@ -572,7 +572,40 @@ include(ROOT_PATH . '/app/includes/header.php');
 <!--/ Footer End /-->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<div id="preloader"></div>
+
+<!-- Preloader -->
+<section>
+	<div id="ctn-preloader" class="ctn-preloader">
+		<div class="animation-preloader">
+			<div class="spinner"></div>
+			<div class="txt-loading">
+				<span data-text-preloader="P" class="letters-loading">
+					P
+				</span>
+				<span data-text-preloader="U" class="letters-loading">
+					U
+				</span>
+				<span data-text-preloader="M" class="letters-loading">
+					M
+				</span>
+				<span data-text-preloader="S" class="letters-loading">
+					S
+				</span>
+				<span data-text-preloader="A" class="letters-loading">
+					A
+			</div>
+			<p class="text-center">Loading</p>
+		</div>
+		<div class="loader">
+			<div class="row">
+				<div class="col-12 loader-section">
+					<div class="bg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <!-- JavaScript Libraries -->
 <script defer src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
