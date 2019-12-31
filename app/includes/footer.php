@@ -151,37 +151,35 @@
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <!-- Preloader -->
-<section>
-  <div id="ctn-preloader" class="ctn-preloader">
-    <div class="animation-preloader">
-      <div class="spinner"></div>
-      <div class="txt-loading">
-        <span data-text-preloader="P" class="letters-loading">
-          P
-        </span>
-        <span data-text-preloader="U" class="letters-loading">
-          U
-        </span>
-        <span data-text-preloader="M" class="letters-loading">
-          M
-        </span>
-        <span data-text-preloader="S" class="letters-loading">
-          S
-        </span>
-        <span data-text-preloader="A" class="letters-loading">
-          A
-      </div>
-      <p class="text-center">Loading</p>
+<div id="ctn-preloader" class="ctn-preloader">
+  <div class="animation-preloader">
+    <div class="spinner"></div>
+    <div class="txt-loading">
+      <span data-text-preloader="P" class="letters-loading">
+        P
+      </span>
+      <span data-text-preloader="U" class="letters-loading">
+        U
+      </span>
+      <span data-text-preloader="M" class="letters-loading">
+        M
+      </span>
+      <span data-text-preloader="S" class="letters-loading">
+        S
+      </span>
+      <span data-text-preloader="A" class="letters-loading">
+        A
     </div>
-    <div class="loader">
-      <div class="row">
-        <div class="col-12 loader-section">
-          <div class="bg"></div>
-        </div>
+    <p class="text-center">Loading</p>
+  </div>
+  <div class="loader">
+    <div class="row">
+      <div class="col-12 loader-section">
+        <div class="bg"></div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- JavaScript Libraries -->
 <script defer src="<?php echo BASE_URL . '/lib/combined.min.js' ?>"></script>
