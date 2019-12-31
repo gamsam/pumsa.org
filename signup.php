@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include_once('path.php');
 include(ROOT_PATH . '/app/controllers/users.php');
@@ -57,7 +57,7 @@ include(ROOT_PATH . '/app/includes/header.php');
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <div class="form-group">
-                    <input type="text" name="username" value="<?php echo $username; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Username"></div>
+                    <input type="text" name="username" value="<?php echo $username; ?>" class="form-control form-control-lg form-control-a" placeholder="Your Username">
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
