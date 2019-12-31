@@ -4,8 +4,8 @@
   'use strict';
 
   $(window).load(function() {
-    $('#ctn-preloader').fadeOut('slow');
     $('body').removeClass('no-scroll-y');
+    $('#ctn-preloader').fadeOut('slow');
   });
 
   // Back to top button
