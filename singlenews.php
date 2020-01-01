@@ -59,8 +59,8 @@ include(ROOT_PATH . '/app/includes/header.php');
       <div class="col-sm-12">
         <div class="row">
           <div class="col-md-4">
-            <div class="agent-avatar-box">
-              <img src="<?php echo BASE_URL . '/img/news_img/' . $news['image']; ?>" alt="" class="agent-avatar img-fluid">
+            <div class="excos-box">
+              <img src="<?php echo BASE_URL . '/img/news_img/' . $news['image']; ?>" alt="" class="excos img-fluid">
             </div>
           </div>
           <div class="col-md-8 section-md-t3">
@@ -130,6 +130,6 @@ include(ROOT_PATH . '/app/includes/header.php');
 
 
 
-<?php include(ROOT_PATH . '/app/includes/newsfooter.php'); ?>
+          <?php include(ROOT_PATH . '/app/includes/newsfooter.php'); ?>
 
-<?php include(ROOT_PATH . '/app/includes/footer.php'); ?>
+          <?php include(ROOT_PATH . '/app/includes/footer.php'); ?>
