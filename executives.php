@@ -57,7 +57,7 @@ include(ROOT_PATH . '/app/includes/header.php');
         <div class="row">
           <div class="col-md-4">
             <div class="excos-box">
-              <img src="img/femi.jpg" alt="" class="excos img-fluid" style="filter: grayscale(100%);">
+              <img src="img/femi.jpg" alt="" class="excos img-fluid">
             </div>
           </div>
           <div class="col-md-5 section-md-t3">
