@@ -159,6 +159,14 @@
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5dda8c03a635b4a1"></script>
 
+<!-- Preloader Script -->
+<script>
+  $(window).load(function() {
+    $('body').removeClass('no-scroll-y');
+    $('#ctn-preloader').fadeOut('slow');
+  });
+</script>
+
 </body>
 
 </html>

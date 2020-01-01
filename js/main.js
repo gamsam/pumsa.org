@@ -3,12 +3,6 @@
 (function($) {
   'use strict';
 
-  // Preloader
-  $(window).load(function() {
-    $('body').removeClass('no-scroll-y');
-    $('#ctn-preloader').fadeOut('slow');
-  });
-
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

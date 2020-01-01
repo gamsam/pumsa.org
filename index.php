@@ -580,6 +580,14 @@ include(ROOT_PATH . '/app/includes/header.php');
 <!--  Main Javascript File -->
 <script src="js/main.js"></script>
 
+<!-- Preloader Script -->
+<script>
+	$(window).load(function() {
+		$('body').removeClass('no-scroll-y');
+		$('#ctn-preloader').fadeOut('slow');
+	});
+</script>
+
 </body>
 
 </html>
