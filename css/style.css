@@ -1,10 +1,5 @@
 /** @format */
 
-img.excos.img-fluid {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
 .blink.dropdown-toggle {
   -webkit-animation: blink 1.25s linear infinite;
   animation: blink 1.25s linear infinite;
@@ -1484,9 +1479,13 @@ ul.navbar-nav {
     -webkit-transform 0.2s ease-out;
   -webkit-transition: opacity 0.2s ease-out 0.3s,
     -webkit-transform 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out 0.3s,
+    -webkit-transform 0.2s ease-out;
   -webkit-transition: opacity 0.2s ease-out 0.3s, -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s,
+    -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s,
     -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out 0.3s,
@@ -1766,6 +1765,8 @@ ul.navbar-nav {
   -webkit-transition: opacity 0.5s 0.5s ease, -webkit-transform 0.5s 0.5s ease;
   transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease;
   transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease, -webkit-transform 0.5s 0.5s ease;
+  transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease,
+    -webkit-transform 0.5s 0.5s ease;
   transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease,
     -webkit-transform 0.5s 0.5s ease;
   transition: transform 0.5s 0.5s ease, opacity 0.5s 0.5s ease,

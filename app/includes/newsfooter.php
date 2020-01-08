@@ -24,7 +24,7 @@
             <br>
             <br>
 
-            <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+            <!-- <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
                 <div class="title-box-d">
                     <h3 class="title-d">Comments</h3>
                 </div>
@@ -32,7 +32,7 @@
                     <ul class="list-comments">
                         <li>
                             <div class="comment-avatar">
-                                <img src="img/author-2.jpg" alt="">
+                                <img src="img/ezinwa.jpg" alt="" style="border-radius: 50px">
                             </div>
                             <div class="comment-details">
                                 <h4 class="comment-author">Emma Stone</h4>
@@ -47,7 +47,7 @@
                         </li>
                         <li class="comment-children">
                             <div class="comment-avatar">
-                                <img src="img/author-1.jpg" alt="">
+                                <img src="img/ezinwa.jpg" alt="" style="border-radius: 50px">
                             </div>
                             <div class="comment-details">
                                 <h4 class="comment-author">Oliver Colmenares</h4>
@@ -62,7 +62,7 @@
                         </li>
                         <li>
                             <div class="comment-avatar">
-                                <img src="img/author-2.jpg" alt="">
+                                <img src="img/ezinwa.jpg" alt="" style="border-radius: 50px">
                             </div>
                             <div class="comment-details">
                                 <h4 class="comment-author">Emma Stone</h4>
@@ -115,14 +115,13 @@
             <hr>
 
             <div class="container" style="text-align: center;">
-                <!-- ================= -->
-                <strong>Sharing is caring:</strong> <br> <br>
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <strong>Sharing is caring:</strong>
+                <br>
+                <br>
                 <div class="addthis_inline_share_toolbox"></div>
-                <!-- ================= -->
                 <br>
                 <br>
                 <p class="intro-subtitle intro-price">
-                    <a href="news.php"><span style="color: #008dc9;" class="price-a">Go Back</span></a>
+                    <a href="blog.php"><span style="color: #008dc9;" class="price-a">Go Back</span></a>
                 </p>
-            </div>
+            </div> -->

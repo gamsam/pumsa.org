@@ -137,11 +137,12 @@ function customPageHeader()
           </section>
           <!--/ Intro Single End /-->
 
+
           <?php foreach ($posts as $p) : ?>
             <div class="col-md-12" style="margin-bottom: 10px;">
               <div class="card-box-b card-shadow news-box" style="height: 150px;">
                 <div class="img-box-b" style="height: 150px;">
-                  <img src="<?php echo BASE_URL . '/img/blog_img/' . $p['image']; ?>" alt="" class="img-b img-fluid" style="height: 150px; width: auto; object-fit:cover;">
+                  <img src="<?php echo BASE_URL . '/img/blog_img/' . $p['image']; ?>" alt="" class="img-b img-fluid" style="height:180px; width: 350px; object-fit: cover;">
                 </div>
                 <div class="card-overlay">
                   <div class="card-header-b">
@@ -158,6 +159,7 @@ function customPageHeader()
               </div>
             </div>
           <?php endforeach; ?>
+
 
         </div>
 

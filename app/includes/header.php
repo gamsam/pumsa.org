@@ -375,24 +375,25 @@
             </div>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle <?php if ($page == 'textbooks.php' || $page == 'pq.php') {
-                                                  echo ' active';
-                                                } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Academics
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="textbooks.php">Textbooks</a>
-              <a class="dropdown-item" href="pq.php">Past Questions</a>
-            </div>
-          </li>
+          <?php if (isset($_SESSION['id'])) : ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle <?php if ($page == 'textbooks.php' || $page == 'pq.php') {
+                                                    echo ' active';
+                                                  } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Academics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="textbooks.php">Textbooks</a>
+                <a class="dropdown-item" href="pq.php">Past Questions</a>
+              </div>
+            </li>
+          <?php endif; ?>
 
           <li class="nav-item">
             <a class="nav-link <?php if ($page == 'contact.php') {
                                   echo ' active';
                                 } ?>" href="contact.php">Contact</a>
           </li>
-
 
           <?php if (isset($_SESSION['id'])) : ?>
             <li class="nav-item dropdown">
