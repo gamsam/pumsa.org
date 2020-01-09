@@ -4,6 +4,8 @@ include_once('path.php');
 include(ROOT_PATH . '/app/database/db.php');
 
 $posts = array();
+$newss = array();
+$sliders = array();
 
 $posts = selectAll('posts', ['published' => 1]);
 $newss = selectAll('news', ['published' => 1]);

@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title><?= isset($PageTitle) ? $PageTitle : "Default Title" ?></title>
+  <title><?= isset($PageTitle) ? $PageTitle : "PUMSA - Selfless Service to Mankind" ?></title>
   <?php if (function_exists('customPageHeader')) {
     customPageHeader();
   } ?>
@@ -13,7 +13,7 @@
   <meta content="pumsa, port harcourt, university, medical, students, association, pumsa.org" name="keywords">
   <meta content="Official website of the Port Harcourt University Medical Students Association, events news" name="description">
 
-  <!-- Favicons -->
+  <!-- Favicon -->
   <link href="<?php echo BASE_URL . '/img/favicon.png' ?>" rel="icon">
 
   <!-- Google Fonts -->
