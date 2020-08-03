@@ -41,7 +41,7 @@ include(ROOT_PATH . '/app/includes/header.php');
 <!--/ Intro Single End /-->
 
 <div class="col-md-10 offset-md-1">
-  <iframe width="100%" src="https://youtu.be/mdJb-pMQ8rY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/mdJb-pMQ8rY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
