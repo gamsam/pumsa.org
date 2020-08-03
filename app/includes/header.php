@@ -377,7 +377,7 @@
 
           <?php if (isset($_SESSION['id'])) : ?>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle <?php if ($page == 'textbooks.php' || $page == 'pq.php') {
+              <a class="nav-link dropdown-toggle <?php if ($page == 'textbooks.php' || $page == 'pq.php' || $page == 'videos.php') {
                                                     echo ' active';
                                                   } ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Academics
@@ -385,6 +385,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="textbooks.php">Textbooks</a>
                 <a class="dropdown-item" href="pq.php">Past Questions</a>
+                <a class="dropdown-item" href="videos.php">Videos</a>
               </div>
             </li>
           <?php endif; ?>
