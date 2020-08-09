@@ -40,8 +40,32 @@ include(ROOT_PATH . '/app/includes/header.php');
 </section>
 <!--/ Intro Single End /-->
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-8">
+      <div class="title-single-box">
+        <h3 id="gallerytitle" class="title-single">Colorectal Cancer </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="col-md-10 offset-md-1">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/mdJb-pMQ8rY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-8">
+      <div class="title-single-box">
+        <h3 id="gallerytitle" class="title-single">Intestinal Obstruction </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-10 offset-md-1">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_7cqjGuRaJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
