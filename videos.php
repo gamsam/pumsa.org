@@ -54,6 +54,9 @@ include(ROOT_PATH . '/app/includes/header.php');
   <iframe width="560" height="315" src="https://www.youtube.com/embed/mdJb-pMQ8rY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<br>
+<hr>
+
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-lg-8">
